@@ -1,0 +1,85 @@
+//- div(class="pagination_area")
+//-   nav(aria-label="...")
+//-     ul.pagination.justify-content-center(class="mt_50")
+//-       if (pagination.currentPage > 0)
+//-         li.page-item
+//-           a.page-link(
+//-             href="javascript:;"
+//-             page=pagination.currentPage-1
+//-             )
+//-             i.far.fa-arrow-left
+//-       - for (let i = 1; i <= pagination.totalPage; i++)
+//-         li.page-item
+//-           a.page-link(
+//-             href="javascript:;"
+//-             page=i
+//-             class=(pagination.currentPage == i ? "active" : "")
+//-           ) #{i < 10 ? `0${i}` : i}
+//-       if (pagination.currentPage < pagination.totalPage)
+//-         li.page-item
+//-           a.page-link(
+//-             href="javascript:;"
+//-             page=pagination.currentPage+1
+//-             )
+//-             i.far.fa-arrow-right
+
+
+
+
+
+div(class="pagination_area")
+  nav(aria-label="...")
+    ul.pagination.justify-content-center.mt_50
+      if (pagination.currentPage > 1)
+        li.page-item
+          a.page-link(
+            href="javascript:;"
+            page=pagination.currentPage-1
+          )
+            i.far.fa-arrow-left
+
+      //- Trang đầu tiên
+      li.page-item
+        a.page-link(
+          href="javascript:;"
+          page=1
+          class=pagination.currentPage == 1 ? "active" : ""
+        ) 01
+
+      //- Hiển thị dấu ... nếu currentPage > 4
+      if (pagination.currentPage > 4)
+        li.page-item.disabled
+          span.page-link ...
+
+      //- Vòng lặp hiển thị các trang gần currentPage
+      - let start = Math.max(2, pagination.currentPage - 2)
+      - let end = Math.min(pagination.totalPage - 1, pagination.currentPage + 2)
+      - for (let i = start; i <= end; i++)
+        li.page-item
+          a.page-link(
+            href="javascript:;"
+            page=i
+            class=pagination.currentPage == i ? "active" : ""
+          ) #{i < 10 ? `0${i}` : i}
+
+      //- Hiển thị dấu ... nếu còn trang phía sau
+      if (pagination.currentPage < pagination.totalPage - 3)
+        li.page-item.disabled
+          span.page-link ...
+
+      //- Trang cuối
+      if (pagination.totalPage > 1)
+        li.page-item
+          a.page-link(
+            href="javascript:;"
+            page=pagination.totalPage
+            class=pagination.currentPage == pagination.totalPage ? "active" : ""
+          ) #{pagination.totalPage < 10 ? `0${pagination.totalPage}` : pagination.totalPage}
+
+      if (pagination.currentPage < pagination.totalPage)
+        li.page-item
+          a.page-link(
+            href="javascript:;"
+            page=pagination.currentPage+1
+          )
+            i.far.fa-arrow-right

@@ -1,0 +1,56 @@
+div(class="mini_cart" mini-cart)
+  #offcanvasRight.offcanvas.offcanvas-end(
+    aria-labelledby="offcanvasRightLabel" 
+    tabindex="-1"
+    )
+    .offcanvas-header
+      h5#offcanvasRightLabel.offcanvas-title
+        | Giỏ hàng (
+        div(mini-cart-quantity) 0
+        | )
+      button.btn-close(
+        aria-label="Close" 
+        data-bs-dismiss="offcanvas" 
+        type="button"
+        )
+        i.far.fa-times
+    .offcanvas-body
+      ul
+        //- li
+        //-   a(
+        //-     class="cart_img" 
+        //-     href="shop_details.html"
+        //-     )
+        //-     img.img-fluid.w-100(
+        //-       alt="product" 
+        //-       src="/client/assets/images/product_1.png"
+        //-       )
+        //-   div(class="cart_text")
+        //-     a(
+        //-       href="shop_details.html" 
+        //-       class="cart_title"
+        //-       ) Men's Fashionable Hoodie
+        //-     p
+        //-       | $140
+        //-       del $150
+        //-     span
+        //-       b Color:
+        //-       | Red
+        //-     span
+        //-       b Size:
+        //-       | XL (Extra Large)
+        //-   a(
+        //-     href="#" 
+        //-     class="del_icon"
+        //-     )
+        //-     i.fal.fa-times
+      h5
+        | Tạm tính
+        span
+          span(sub-total) 0
+          span đ
+      div(class="minicart_btn_area")
+        a(
+          href="/cart" 
+          class="common_btn"
+          ) Xem Giỏ Hàng

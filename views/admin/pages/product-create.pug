@@ -1,0 +1,127 @@
+extends ../layouts/default.pug
+include ../mixins/form-group.pug
+include ../mixins/checkbox.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="productCreateForm")
+        .row
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="name") Tên sản phẩm *
+              input.form-control(id="name" type="text" name="name")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="slug") Đường dẫn *
+              .input-group
+                span.btn.btn-outline-info(
+                  btn-generate-slug="Product" 
+                  from="name"
+                  to="slug"
+                ) Tự động
+                input.form-control(id="slug" type="text" name="slug")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="position") Vị trí
+              input.form-control(id="position" type="number" name="position")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(value="draft") Bản nháp
+                option(value="active") Hoạt động
+                option(value="inactive") Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label Danh mục
+              div(class="checkbox-list" checkbox-list="category")
+                +checkbox-list(categoryList)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="priceOld") Giá cũ
+              input.form-control(id="priceOld" type="number" name="priceOld")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="priceNew") Giá mới
+              input.form-control(id="priceNew" type="number" name="priceNew")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="stock") Còn lại
+              input.form-control(id="stock" type="number" name="stock")
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label Danh sách thuộc tính
+              div(class="checkbox-list" checkbox-list="attributes")
+                +checkbox-list(attributeList)
+              span.btn.btn-outline-info.mt-1(
+                button-render-variant="attributes"
+              ) Tạo biến thể
+              script.
+                const attributeList = !{JSON.stringify(attributeList)};
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label Danh sách biến thể
+              .table-responsive-sm
+                table.table.mb-0(variant-table)
+                  thead.table-light
+                    tr
+                      //- th(scope="col") Trạng thái
+                      //- th(scope="col") Kích cỡ
+                      //- th(scope="col") Màu sắc
+                      //- th(scope="col") Giá cũ
+                      //- th(scope="col") Giá mới
+                  tbody
+                    //- tr
+                    //-   td
+                    //-     .form-check.form-switch.form-switch-success
+                    //-       input.form-check-input(type="checkbox" checked)
+                    //-   td Size S
+                    //-   td Đỏ
+                    //-   td
+                    //-     input.form-control(type="number")
+                    //-   td
+                    //-     input.form-control(type="number")
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label Danh sách ảnh
+              div(class="form-multi-file")
+                .input-group
+                  span.btn.btn-outline-info(
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalFileManager"
+                  ) Chọn file
+                  span.btn.btn-outline-info(
+                    button-paste
+                  ) Dán file
+                .inner-list-image(multi-file="images")
+                  //- .inner-image
+                  //-   img(src="https://placehold.co/100x100/EEE/31343C", alt="")
+                  //-   span.inner-remove x
+                  //- .inner-image
+                  //-   img(src="https://placehold.co/100x100/EEE/31343C", alt="")
+                  //-   span.inner-remove x
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label(for="description") Mô tả ngắn
+              textarea(id="description" name="description" textarea-mce)
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label(for="content") Nội dung chi tiết
+              textarea(id="content" name="content" textarea-mce)
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label Tags
+              select(select-tag name="tags")
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label Sản phẩm mua kèm
+              select(select-tag name="boughtTogether" multiple taggable="false")
+                each item in productList
+                  option(value=item._id) #{item.name}
+        button.btn.btn-primary(type="submit") Tạo mới
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/product/list`) Hủy

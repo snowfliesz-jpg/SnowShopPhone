@@ -1,0 +1,48 @@
+include stars.pug
+
+mixin product-item-2(item)
+  div(class="product_item_2 product_item")
+    div(class="product_img")
+      img.img-fluid.w-100(
+        alt=item.name
+        src=`${domainCDN}${item.images[0]}`
+        )
+      ul(class="discount_list")
+        //- li.new new
+        if (item.discount > 0)
+          li.discount
+            b -
+            | #{item.discount}%
+      ul(class="btn_list")
+        li
+          a(href="#")
+            img.img-fluid(
+              alt="Compare" 
+              src="/client/assets/images/compare_icon_white.svg"
+              )
+        li
+          a(href="#")
+            img.img-fluid(
+              alt="Love" 
+              src="/client/assets/images/love_icon_white.svg"
+              )
+        li
+          a(href="#")
+            img.img-fluid(
+              alt="Love" 
+              src="/client/assets/images/cart_icon_white.svg"
+              )
+    div(class="product_text")
+      a.title(href=`/product/detail/${item.slug}`) #{item.name}
+      p.price
+        if (item.priceNew)
+          | #{item.priceNew.toLocaleString("vi-VN")}đ
+        if (item.priceOld)
+        del #{item.priceOld.toLocaleString("vi-VN")}đ
+      p.rating
+        +stars(item)
+        span (#{item.ratingCount} Đánh giá)
+      if (item.colorList.length > 0)
+        ul.color
+          each color in item.colorList
+            li(style=`background:${color}`)

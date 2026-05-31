@@ -1,0 +1,52 @@
+extends ../layouts/default.pug
+include ../mixins/options.pug
+include ../mixins/form-group.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="productCreateCategoryForm")
+        .row
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="name") Tên danh mục *
+              input.form-control(id="name" type="text" name="name")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="slug") Đường dẫn *
+              .input-group
+                span.btn.btn-outline-info(
+                  btn-generate-slug="CategoryProduct" 
+                  from="name" 
+                  to="slug"
+                ) Tự động
+                input.form-control(id="slug" type="text" name="slug")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="parent") Danh mục cha
+              select.form-select(id="parent" name="parent")
+                option(value="") -- Chọn danh mục --
+                +options(categoryList, 0)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(value="active") Hoạt động
+                option(value="inactive") Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              +form-group-file(
+                "Ảnh đại diện",
+                "avatar",
+                "avatar"
+              )
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label(for="description") Mô tả
+              textarea(id="description" name="description" textarea-mce)
+        button.btn.btn-primary(type="submit") Tạo mới
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/product/category`) Hủy

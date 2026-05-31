@@ -1,0 +1,59 @@
+extends ../layouts/blank.pug
+
+block main
+  .container-xxl
+    .row.vh-100.d-flex.justify-content-center
+      .col-12.align-self-center
+        .card-body
+          .row
+            .col-lg-4.mx-auto
+              .card
+                .card-body.p-0.bg-black.auth-header-box.rounded-top
+                  .text-center.p-3
+                    a.logo.logo-admin(href="#")
+                      img.auth-logo(
+                        alt="logo" 
+                        height="50" 
+                        src="/admin/assets/images/logo-sm.png"
+                        )
+                    h4.mt-3.mb-1.fw-semibold.text-white.fs-18 #{pageTitle}
+                    p.text-muted.fw-medium.mb-0 Đăng nhập để tiếp tục truy cập vào trang quản trị.
+                .card-body.pt-0
+                  form.my-4(id="accountLoginForm")
+                    .form-group.mb-2
+                      label.form-label(for="email") Email
+                      input#email.form-control(
+                        placeholder="Nhập email" 
+                        name="email" 
+                        type="email"
+                        )
+                    // end form-group
+                    .form-group
+                      label.form-label(for="password") Mật khẩu
+                      input#password.form-control(
+                        placeholder="Nhập mật khẩu" 
+                        name="password" 
+                        type="password"
+                        )
+                    // end form-group
+                    .form-group.row.mt-3
+                      .col-sm-6
+                        .form-check.form-switch.form-switch-success
+                          input#rememberPassword.form-check-input(type="checkbox" name="rememberPassword")
+                          label.form-check-label(for="rememberPassword") Nhớ mật khẩu
+                      // end col
+                      .col-sm-6.text-end
+                        a.text-muted.font-13(href="#")
+                          i.dripicons-lock
+                          | Quên mật khẩu?
+                      // end col
+                    // end form-group
+                    .form-group.mb-0.row
+                      .col-12
+                        .d-grid.mt-3
+                          button.btn.btn-primary
+                            | Đăng Nhập
+                            i.fas.fa-sign-in-alt.ms-1
+                      // end col
+                    // end form-group
+                  // end form

@@ -1,0 +1,34 @@
+div(class="blog_details_left")
+  div(class="blog_details_img_1")
+    img.img-fluid.w-100(
+      alt="img" 
+      src=`${domainCDN}${articleDetail.avatar}`
+      )
+  ul.d-flex.flex-wrap(class="blog_details_top")
+    if (articleDetail.date)
+      li
+        span
+          img.img-fluid.w-100(
+            alt="icon" 
+            src="/client/assets/images/calender.png"
+            )
+        | #{articleDetail.date}
+    if (articleDetail.authorName)
+      li
+        span
+          img.img-fluid.w-100(
+            alt="icon" 
+            src="/client/assets/images/user_icon_black.svg"
+            )
+        | #{articleDetail.authorName}
+    li
+      span
+        img.img-fluid.w-100(
+          alt="icon" 
+          src="/client/assets/images/massage.png"
+          )
+      | 0 Bình luận
+  div(class="blog_details_desc")
+    | !{articleDetail.description}
+  div(class="blog_details_content")
+    | !{articleDetail.content}

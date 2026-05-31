@@ -1,0 +1,11 @@
+mixin form-group-file(label="", name="", id="", value="", placeholder="Đường dẫn file...")
+  div(form-group-file)
+    label.form-label(for=id) #{label}
+    .input-group
+      span.btn.btn-outline-info(
+        data-bs-toggle="modal" 
+        data-bs-target="#modalFileManager"
+        ) Chọn file
+      input.form-control(id=id type="text" name=name value=value placeholder=placeholder input-file)
+    .preview-file(preview-file)
+      img

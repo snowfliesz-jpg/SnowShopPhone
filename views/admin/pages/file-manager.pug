@@ -1,0 +1,203 @@
+extends ../layouts/blank.pug
+include ../mixins/pagination.pug
+
+block main
+  ul.list-group.list-group-horizontal-md.mb-3(breadcumb-folder)
+    //- li.list-group-item.bg-white
+    //-   a(href="#")
+    //-     i.la.la-angle-double-right.text-info.me-2
+    //-     | Media
+    //- li.list-group-item.bg-white
+    //-   a(href="#")
+    //-     i.la.la-angle-double-right.text-info.me-2
+    //-     | Folder 1
+    //- li.list-group-item.bg-white
+    //-   a(href="#")
+    //-     i.la.la-angle-double-right.text-info.me-2
+    //-     | Folder 1 - 1
+
+  .card
+    .card-header
+      .row.align-items-center.g-2
+        .col-lg-8
+          h4.card-title Danh sách folder
+        .col-lg-4
+          form(form-create-folder)
+            .input-group
+              input(
+                class="form-control"
+                placeholder="Tên folder" 
+                type="text"
+                name="folderName"
+              )
+              button.btn.btn-secondary Tạo folder
+        // end col
+      // end row
+    // end card-header
+    .card-body.pt-0
+      .table-responsive
+        table.table.table-striped.mb-0
+          thead.table-light
+            tr
+              th Tên
+              th Ngày tạo
+              th.text-end Hành động
+          tbody
+            each item in folderList
+              tr
+                td
+                  a(
+                    href="javascript:;"
+                    button-to-folder
+                    data-folder-path=item.name
+                    ) 
+                    .d-inline-flex.justify-content-center.align-items-center.thumb-md.bg-secondary-subtle.rounded.mx-auto.me-1
+                      i.fa-solid.fa-folder.fs-18.align-self-center.mb-0.text-secondary
+                    span #{item.name}
+                td #{item.createdAtFormat}
+                td.text-end
+                  a(
+                    href="javascript:;"
+                    button-delete-folder
+                    data-folder-name=item.name
+                  )
+                    i.las.la-trash-alt.text-secondary.fs-18.ms-1
+    // end card-body
+  
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title Danh sách file
+        // end col
+      // end row
+    // end card-header
+    .card-body.pt-0
+      div.mb-2
+        span.btn.btn-outline-info(
+          button-copy-multi
+        ) Copy file đã chọn
+      .table-responsive
+        table.table.table-striped.mb-0
+          thead.table-light
+            tr
+              th
+                input(type="checkbox" class="checkbox-all")
+              th Tên
+              th Ngày tạo
+              th Kích thước
+              th.text-end Hành động
+          tbody
+            each item in listFile
+              tr
+                td
+                  input(type="checkbox" class="checkbox-input" value=`${item.folder}/${item.filename}`)
+                td
+                  if (item.mimetype.includes("image"))
+                    img(
+                      src=`${domainCDN}${item.folder}/${item.filename}`
+                      class="rounded thumb-md me-1 d-inline"
+                    )
+                  else if (item.mimetype.includes("audio"))
+                    .d-inline-flex.justify-content-center.align-items-center.thumb-md.bg-blue-subtle.rounded.mx-auto.me-1
+                      i.fa-solid.fa-headphones.fs-18.align-self-center.mb-0.text-blue
+                  else if (item.mimetype.includes("video"))
+                    .d-inline-flex.justify-content-center.align-items-center.thumb-md.bg-blue-subtle.rounded.mx-auto.me-1
+                      i.fa-solid.fa-video.fs-18.align-self-center.mb-0.text-blue
+                  else if (item.mimetype.includes("application/pdf"))
+                    .d-inline-flex.justify-content-center.align-items-center.thumb-md.bg-blue-subtle.rounded.mx-auto.me-1
+                      i.fa-solid.fa-file-pdf.fs-18.align-self-center.mb-0.text-blue
+                  span #{item.filename}
+                td #{item.createdAtFormat}
+                td #{item.sizeFormat}
+                td.text-end
+                  a(
+                    href="javascript:;"
+                    button-copy
+                    data-content=`${item.folder}/${item.filename}`
+                    )
+                    i.las.la-copy.text-secondary.fs-18.ms-1
+                  a(
+                    href="javascript:;"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalPreviewFile"
+                    button-preview-file
+                    data-file=`${domainCDN}${item.folder}/${item.filename}`
+                    data-mimetype=item.mimetype
+                    )
+                    i.las.la-eye.text-secondary.fs-18.ms-1
+                  a(href=`${domainCDN}${item.folder}/${item.filename}?type=download`)
+                    i.las.la-download.text-secondary.fs-18.ms-1
+                  a(
+                    href="javascript:;"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalChangeFileName"
+                    button-change-file-name
+                    data-file-name=item.filename
+                    data-file-id=item.id
+                    )
+                    i.las.la-pen.text-secondary.fs-18.ms-1
+                  a(
+                    href="javascript:;"
+                    button-delete-file
+                    data-file-id=item.id
+                    data-file-name=item.filename
+                    )
+                    i.las.la-trash-alt.text-secondary.fs-18.ms-1
+      +pagination()
+    // end card-body
+  
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title Upload file
+        // end col
+      // end row
+    // end card-header
+    .card-body.pt-0
+      div(id="uppy-upload")
+    // end card-body
+
+  //- Modal Preview File
+  #modalPreviewFile.modal.fade(
+    aria-hidden="true" 
+    tabindex="-1"
+    )
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h1.modal-title.fs-5 Xem thử file
+          button.btn-close(
+            aria-label="Close" 
+            data-bs-dismiss="modal" 
+            type="button"
+            )
+        .modal-body
+          .inner-preview
+  //- End Modal Preview File
+
+  //- Modal Change File Name
+  #modalChangeFileName.modal.fade(
+    aria-hidden="true" 
+    tabindex="-1"
+    )
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h1.modal-title.fs-5 Đổi tên file
+          button.btn-close(
+            aria-label="Close" 
+            data-bs-dismiss="modal" 
+            type="button"
+            )
+        .modal-body
+          form(action="")
+            .mb-3.d-none
+              label(class="form-label") Id
+              input(type="text" class="form-control" name="fileId")
+            .mb-3
+              label(class="form-label") Tên file
+              input(type="text" class="form-control" name="fileName")
+            button.btn.btn-primary(type="submit") Cập nhật
+  //- End Modal Change File Name

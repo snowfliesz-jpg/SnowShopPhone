@@ -1,0 +1,165 @@
+include ../mixins/menu-category-item.pug
+
+nav.d-none.d-lg-block(class="main_menu_2 main_menu")
+  .container
+    .row
+      .col-12.d-flex.flex-wrap
+        div(class="main_menu_area")
+          div(class="menu_category_area")
+            a.d-none(
+              class="menu_logo" 
+              href="index.html"
+              )
+              img.img-fluid.w-100(
+                alt="Zenis" 
+                src="/client/assets/images/logo_2.jpg"
+                )
+            div(class="menu_category_bar")
+              p
+                span
+                  img(
+                    alt="category icon" 
+                    src="/client/assets/images/bar_icon_white.svg"
+                    )
+                | Danh Mục Sản Phẩm
+              i.fas.fa-chevron-down
+            +renderCategory(categoryProductList, 0)
+          ul(class="menu_item")
+            li
+              a(href="/")
+                | Trang Chủ
+            li
+              a(href="#")
+                | Sản Phẩm
+                i.fas.fa-chevron-down
+              ul(class="menu_droapdown")
+                each item in categoryProductList
+                  if (item.status)
+                    li
+                      a(href=`/product/category/${item.slug}`) #{item.name}
+            li
+              a(href="#")
+                | Bài Viết
+                i.fas.fa-chevron-down
+              ul(class="menu_droapdown")
+                each item in categoryArticleList
+                  if (item.status)
+                    li
+                      a(href=`/article/category/${item.slug}`) #{item.name}
+          ul(class="menu_icon")
+            li
+              a(href="/compare")
+                b
+                  img.img-fluid(
+                    alt="So sánh" 
+                    src="/client/assets/images/compare_black.svg"
+                    )
+                span(mini-compare-quantity) 0
+            li
+              a(href="/wishlist")
+                b
+                  img.img-fluid(
+                    alt="Yêu thích" 
+                    src="/client/assets/images/love_black.svg"
+                    )
+                span(mini-wishlist-quantity) 0
+            li
+              a(
+                aria-controls="offcanvasRight" 
+                data-bs-target="#offcanvasRight" 
+                data-bs-toggle="offcanvas"
+                )
+                b
+                  img.img-fluid(
+                    alt="cart" 
+                    src="/client/assets/images/cart_black.svg"
+                    )
+                span(mini-cart-quantity) 0
+            if (!accountUser)
+              li
+                a.user(href="/auth/login")
+                  b
+                    img.img-fluid(
+                      alt="cart" 
+                      src="/client/assets/images/user_icon_black.svg"
+                      )
+                  h5 Tài Khoản
+                ul(class="user_dropdown")
+                  li
+                    a(href="/auth/login")
+                      <i class="fas fa-user me-2"></i>
+                      | Đăng Nhập
+                  li
+                    a(href="/auth/register")
+                      <i class="fas fa-user-plus me-2"></i>
+                      | Đăng Ký
+            else
+              li
+                a.user(href="/dashboard")
+                  b
+                    img.img-fluid(
+                      alt="cart" 
+                      src="/client/assets/images/user_icon_black.svg"
+                      )
+                  h5 #{accountUser.fullName}
+                ul(class="user_dropdown")
+                  li
+                    a(href="/dashboard")
+                      svg.size-6(
+                        stroke="currentColor" 
+                        stroke-width="1.5" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                        )
+                        path(
+                          d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" 
+                          stroke-linejoin="round" 
+                          stroke-linecap="round"
+                          )
+                      | Tổng quan
+                  li
+                    a(href="/dashboard/profile")
+                      svg.size-6(
+                        stroke="currentColor" 
+                        stroke-width="1.5" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                        )
+                        path(
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" 
+                          stroke-linejoin="round" 
+                          stroke-linecap="round"
+                          )
+                      | Tài khoản
+                  li
+                    a(href="/dashboard/order/list")
+                      svg.size-6(
+                        stroke="currentColor" 
+                        stroke-width="1.5" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                        )
+                        path(
+                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" 
+                          stroke-linejoin="round" 
+                          stroke-linecap="round"
+                          )
+                      | Đơn hàng
+                  li
+                    a(href="/auth/logout")
+                      svg.size-6(
+                        stroke="currentColor" 
+                        stroke-width="1.5" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                        )
+                        path(
+                          d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" 
+                          stroke-linejoin="round" 
+                          stroke-linecap="round"
+                          )
+                      | Đăng xuất

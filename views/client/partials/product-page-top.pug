@@ -1,0 +1,41 @@
+div(class="product_page_top")
+  .row
+    .col-4.col-xl-6.col-md-6
+      div(class="product_page_top_button")
+        nav
+          #nav-tab.nav.nav-tabs(role="tablist")
+            button#nav-home-tab.nav-link.active(
+              aria-selected="true" 
+              aria-controls="nav-home" 
+              role="tab" 
+              type="button" 
+              data-bs-target="#nav-home" 
+              data-bs-toggle="tab"
+              )
+              i.fas.fa-th
+            button#nav-profile-tab.nav-link(
+              aria-selected="false" 
+              aria-controls="nav-profile" 
+              role="tab" 
+              type="button" 
+              data-bs-target="#nav-profile" 
+              data-bs-toggle="tab"
+              )
+              i.fas.fa-list-ul
+        p Hiển thị #{pagination.skip+1} - #{pagination.skip+productList.length} của #{pagination.totalRecord} kết quả
+    .col-8.col-xl-6.col-md-6
+      ul(class="product_page_sorting")
+        li(select-js="sort")
+          select.show(class="select_js")
+            option(value="position-desc") Mặc định
+            option(value="price-asc") Giá thấp đến cao
+            option(value="price-desc") Giá cao đến thấp
+            option(value="createdAt-desc") Sản phẩm mới
+            option(value="discount-desc") Giảm giá nhiều
+        li(select-js="limitItems")
+          select.show(class="select_js")
+            option(value="12") Hiển thị: 12
+            option(value="16") Hiển thị: 16
+            option(value="20") Hiển thị: 20
+            option(value="24") Hiển thị: 24
+            option(value="28") Hiển thị: 28

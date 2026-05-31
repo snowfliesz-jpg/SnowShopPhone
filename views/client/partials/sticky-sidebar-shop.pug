@@ -1,0 +1,80 @@
+include ../mixins/stars.pug
+
+div(id="sticky_sidebar")
+  .d-lg-none(class="shop_filter_btn") Bộ lọc
+  div(class="shop_filter_area")
+    div(class="sidebar_range")
+      h3 Mức giá
+      div(class="range_slider")
+    div(class="sidebar_status")
+      h3 Trạng thái sản phẩm
+      .form-check
+        input#filterOnSale.form-check-input(
+          filter-product-status
+          value="onSale" 
+          type="checkbox"
+          )
+        label.form-check-label(for="filterOnSale") Đang giảm giá
+      .form-check
+        input#filterInStock.form-check-input(
+          filter-product-status
+          value="inStock" 
+          type="checkbox"
+          )
+        label.form-check-label(for="filterInStock") Còn hàng
+    div(class="sidebar_category")
+      h3 Danh mục
+      ul
+        each item in categoryProductList
+          li
+            a(href="javascript:;" button-slug=item.slug)
+              | #{item.name}
+    each attribute in attributeProductList
+      div(class=`${attribute.type == "color" ? "sidebar_color" : "sidebar_status"}`)
+        h3 #{attribute.name}
+        ul(filter-attribute=attribute.id)
+          each option in attribute.options
+            li
+              .form-check
+                input.form-check-input(
+                  style=`${attribute.type == "color" ? `background-color: ${option.value}` : ""}`
+                  id=`${attribute.type}-${attribute.id}-${option.value}`
+                  value=option.value
+                  type="checkbox"
+                  )
+                label.form-check-label(
+                  for=`${attribute.type}-${attribute.id}-${option.value}`
+                ) #{option.label}
+    div(class="sidebar_rating")
+      h3 Đánh giá
+      each star in [5,4,3,2,1]
+        .form-check
+          input.form-check-input(
+            id=`filterRating${star}`
+            name="rating"
+            value=star
+            type="checkbox"
+          )
+          label.form-check-label(for=`filterRating${star}`)
+            i.fas.fa-star.me-1(aria-hidden="true")
+            | #{star} sao
+    div(class="sidebar_related_product")
+      h3 Sản phẩm được đánh giá cao
+      ul
+        each item in topRatedProducts
+          li
+            a.img(href=`/product/detail/${item.slug}`)
+              img.img-fluid(
+                alt=item.name
+                src=`${domainCDN}${item.images[0]}`
+                )
+            .text
+              p.rating
+                +stars(item)
+                span (#{item.ratingCount})
+              a.title(href=`/product/detail/${item.slug}`) #{item.name}
+              p.price
+                if (item.priceNew)
+                  | #{item.priceNew.toLocaleString("vi-VN")}đ
+                if (item.priceOld)
+                  del(class="ms-1") #{item.priceOld.toLocaleString("vi-VN")}đ

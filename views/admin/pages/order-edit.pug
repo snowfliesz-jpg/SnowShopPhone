@@ -1,0 +1,148 @@
+extends ../layouts/default.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle} - #{orderDetail.code}
+    .card-body.pt-0
+      form(id="orderEditForm")
+        input(type="hidden" name="id" value=orderDetail.id)
+        h5.mt-3 Thong tin khach hang
+        .row
+          .col-md-6
+            .mb-3
+              label.form-label Ho ten
+              input.form-control(disabled value=orderDetail.fullName)
+          .col-md-6
+            .mb-3
+              label.form-label So dien thoai
+              input.form-control(disabled value=orderDetail.phone)
+          .col-md-12
+            .mb-3
+              label.form-label Dia chi
+              textarea.form-control(rows="2" disabled)= orderDetail.address
+
+        h5.mt-4 San pham trong don
+        .table-responsive
+          table.table.table-bordered
+            thead.table-light
+              tr
+                th San pham
+                th Thuoc tinh
+                th SL
+                th Gia
+                th Thanh tien
+            tbody
+              each p in orderDetail.items
+                tr
+                  td
+                    .d-flex.align-items-center
+                      img(src=`${domainCDN}${p.image}` width="50" class="me-2 rounded")
+                      span #{p.name}
+                  td
+                    if (p.variant)
+                      each v in p.variant
+                        div.small.text-muted #{v}
+                  td #{p.quantity}
+                  td #{p.price.toLocaleString('vi-VN')} d
+                  td.text-danger
+                    b #{(p.price * p.quantity).toLocaleString('vi-VN')} d
+
+        h5.mt-4 Thanh toan va van chuyen
+        .row
+          .col-md-4
+            .mb-3
+              label.form-label Phuong thuc thanh toan
+              input.form-control(
+                disabled
+                value=
+                  orderDetail.paymentMethod == 'money' ? 'Tien mat' :
+                  orderDetail.paymentMethod == 'vnpay' ? 'VNPay' :
+                  orderDetail.paymentMethod == 'zalopay' ? 'ZaloPay' :
+                  ''
+              )
+          .col-md-4
+            .mb-3
+              label.form-label Trang thai thanh toan
+              select.form-select(name="paymentStatus")
+                option(
+                  value="unpaid"
+                  selected=(orderDetail.paymentStatus == "unpaid")
+                ) Chua thanh toan
+                option(
+                  value="paid"
+                  selected=(orderDetail.paymentStatus == "paid")
+                ) Da thanh toan
+                option(
+                  value="refunded"
+                  selected=(orderDetail.paymentStatus == "refunded")
+                ) Da hoan tien
+          .col-md-4
+            .mb-3
+              label.form-label Don vi van chuyen
+              input.form-control(
+                disabled
+                value=orderDetail.shipping ? orderDetail.shipping.carrierName : ''
+              )
+        .row
+          .col-md-3
+            .mb-3
+              label.form-label Tam tinh
+              input.form-control(disabled value=orderDetail.subTotal.toLocaleString('vi-VN') + 'd')
+          .col-md-3
+            .mb-3
+              label.form-label Ma giam gia
+              input.form-control(disabled value=orderDetail.coupon || '-')
+          .col-md-3
+            .mb-3
+              label.form-label Giam gia
+              input.form-control(disabled value=orderDetail.discount.toLocaleString('vi-VN') + 'd')
+          .col-md-3
+            .mb-3
+              label.form-label Phi ship
+              input.form-control(
+                disabled
+                value=
+                  orderDetail.shipping && orderDetail.shipping.fee
+                    ? orderDetail.shipping.fee.toLocaleString('vi-VN') + 'd'
+                    : '0d'
+              )
+        .row
+          .col-md-4
+            .mb-3
+              label.form-label Diem da dung
+              input.form-control(disabled value=orderDetail.usedPoint)
+          .col-md-4
+            .mb-3
+              label.form-label Giam tu diem
+              input.form-control(disabled value=orderDetail.pointDiscount.toLocaleString('vi-VN') + 'd')
+          .col-md-4
+            .mb-3
+              label.form-label Tong thanh toan
+              input.form-control.text-danger(
+                disabled
+                value=orderDetail.total.toLocaleString('vi-VN') + 'd'
+              )
+
+        h5.mt-4 Trang thai don hang
+        .row
+          .col-md-6
+            .mb-3
+              label.form-label Trang thai
+              select.form-select(name="orderStatus")
+                option(value="pending" selected=(orderDetail.orderStatus=="pending")) Cho xac nhan
+                option(value="confirmed" selected=(orderDetail.orderStatus=="confirmed")) Da xac nhan
+                option(value="shipping" selected=(orderDetail.orderStatus=="shipping")) Dang giao
+                option(value="completed" selected=(orderDetail.orderStatus=="completed")) Giao thanh cong
+                option(value="returned" selected=(orderDetail.orderStatus=="returned")) Tra hang
+                option(value="cancelled" selected=(orderDetail.orderStatus=="cancelled")) Huy
+          .col-md-6
+            .mb-3
+              label.form-label Ghi chu
+              textarea.form-control(name="note" rows="2")= orderDetail.note
+
+        .mt-4
+          button.btn.btn-primary(type="submit") Cap nhat don hang
+          a.btn.btn-danger.ms-2(href=`/${pathAdmin}/order/list`) Quay lai

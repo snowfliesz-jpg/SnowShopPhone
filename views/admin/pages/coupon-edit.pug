@@ -1,0 +1,98 @@
+extends ../layouts/default.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="couponEditForm")
+        .row
+          .col-md-6.col-lg-6.d-none
+              .mb-3
+                label.form-label(for="id") Id
+                input.form-control(id="id" type="text" name="id" value=couponDetail.id)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="code") Mã giảm giá *
+              input.form-control(id="code" type="text" name="code" placeholder="Ví dụ: CHAOHE2025" value=couponDetail.code)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="name") Tên mã giảm giá *
+              input.form-control(id="name" type="text" name="name" placeholder="Ví dụ: Chào hè 2025" value=couponDetail.name)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="typeDiscount") Kiểu giảm giá
+              select.form-select(id="typeDiscount" name="typeDiscount")
+                option(
+                  value="percentage"
+                  selected=(couponDetail.typeDiscount == "percentage")
+                ) Phần trăm
+                option(
+                  value="fixed"
+                  selected=(couponDetail.typeDiscount == "fixed")
+                ) Số tiền cố định
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="value") Giá trị giảm
+              input.form-control(id="value" type="number" name="value" value=couponDetail.value)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="minOrderValue") Giá trị đơn hàng tối thiểu
+              input.form-control(id="minOrderValue" type="number" name="minOrderValue" value=couponDetail.minOrderValue)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="maxDiscountValue") Số tiền giảm tối đa (Nếu kiểu %)
+              input.form-control(id="maxDiscountValue" type="number" name="maxDiscountValue" value=couponDetail.maxDiscountValue)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="usageLimit") Số lượng giới hạn
+              input.form-control(id="usageLimit" type="number" name="usageLimit" value=couponDetail.usageLimit)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="typeDisplay") Kiểu hiển thị
+              select.form-select(id="typeDisplay" name="typeDisplay")
+                option(
+                  value="public"
+                  selected=(couponDetail.typeDisplay == "fixed")
+                ) Công khai
+                option(
+                  value="private"
+                  selected=(couponDetail.typeDisplay == "fixed")
+                ) Riêng tư
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(
+                  value="active"
+                  selected=(couponDetail.status == "active")
+                ) Hoạt động
+                option(
+                  value="inactive"
+                  selected=(couponDetail.status == "inactive")
+                ) Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label Thời gian hiệu lực
+              .input-group(date-range)
+                input.form-control(
+                  name="startDate"
+                  placeholder="Ngày bắt đầu" 
+                  type="text"
+                  value=couponDetail.startDateFormat
+                  )
+                span.input-group-text đến
+                input.form-control.rounded-end(
+                  name="endDate"
+                  placeholder="Ngày kết thúc" 
+                  type="text"
+                  value=couponDetail.endDateFormat
+                  )
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label(for="description") Mô tả
+              textarea(id="description" name="description" textarea-mce) #{couponDetail.description}
+        button.btn.btn-primary(type="submit") Cập nhật
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/coupon/list`) Hủy

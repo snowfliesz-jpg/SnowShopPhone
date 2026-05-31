@@ -1,0 +1,35 @@
+extends ../layouts/default.pug
+include ../mixins/page-banner.pug
+
+block main
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+  +page-banner(
+    articleDetail,
+    `/article/detail/${articleDetail.slug}`
+  )
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+
+  //
+    ============================
+    BLOG DETAILS START
+    =============================
+  section(class="blog_details blog_2 mt_75 mb_100")
+    .container
+      .row
+        .col-xl-9.col-lg-8.wow.fadeInUp
+          include ../partials/blog-details-left.pug
+          include ../partials/blog-shear-area.pug
+          include ../partials/blog-details-comment.pug
+          include ../partials/blog-details-comment-input.pug
+        .col-xl-3.col-lg-4.col-md-8.wow.fadeInRight
+          include ../partials/sticky-sidebar-blog.pug
+  //
+    ============================
+    BLOG DETAILS START
+    =============================

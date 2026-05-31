@@ -1,0 +1,6367 @@
+@media only screen and (min-width: 1600px) {
+    .col-xl-1-5 {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .bundle_product {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 36px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 250px;
+    }
+
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 1500px;
+    }
+
+    .header_2 form .input {
+        width: 55%;
+    }
+
+    .banner_slider_2 {
+        margin: 25px 12px 0px 67px;
+    }
+
+    .product_item_2 .product_img {
+        height: 245px;
+    }
+
+    .category_2 .category_item .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        width: 170%;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: 225px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: 452px;
+    }
+
+    .brand_2 ul li {
+        width: 11.3%;
+    }
+
+    .blog_2 .blog_img {
+        height: 275px;
+    }
+
+    .header_2 form {
+        width: 100%;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 365px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 580px;
+    }
+
+    .beauty_product_item .img {
+        height: 325px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 80%;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 400px;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 600px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+    .popular_blog_text {
+        width: 66%;
+    }
+
+    .blog_seidebar_add .text {
+        padding: 25px 25px;
+    }
+
+    .blog_seidebar_add {
+        height: 400px;
+    }
+
+    .blog_details_img_1 {
+        height: 515px;
+    }
+
+    .blog_details_center_img {
+        height: 375px;
+    }
+
+    .blog_comment_text {
+        width: 92%;
+    }
+
+    .shop_page .product_item_2 .product_img {
+        height: 255px;
+    }
+
+    .shop_page .product_list_item .product_img {
+        height: 310px;
+    }
+
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+
+    .shop_details_text {
+        padding: 0px 35px;
+    }
+
+    .details_slider_nav_item {
+        width: 91px;
+        height: 108px;
+    }
+
+    .tracking_product_info p {
+        max-width: 80%;
+    }
+
+    .single_vendor .img {
+        height: 165px;
+    }
+
+    .single_vendor .text .title {
+        font-size: 20px;
+    }
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px;
+    }
+
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 250px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 92%;
+    }
+
+    .return_product_item .text {
+        width: 69%;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (min-width: 1400px) and (max-width: 1599.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    .bundle_product {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+
+    .bundle_product_banner .text {
+        padding: 100px 30px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 38px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 220px;
+    }
+
+    .bundle_product_banner {
+        height: 842px;
+    }
+
+    .banner_slider .slick-dots {
+        right: 80px;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 1320px;
+    }
+
+    .header_2 form .input {
+        width: 55%;
+    }
+
+    .banner_slider_2 {
+        margin: 25px 12px 0px 97px;
+    }
+
+    .header_2 form {
+        width: 100%;
+    }
+
+    .banner_slider_2_text {
+        max-width: 80%;
+    }
+
+    .features_item {
+        padding: 0;
+        margin-left: 35px;
+    }
+
+    .features_item .text {
+        padding: 35px 20px 35px 55px;
+    }
+
+    .features_item .text h3 {
+        font-size: 22px;
+    }
+
+    .features_item .text p {
+        font-size: 15px;
+    }
+
+    .features_item .icon {
+        width: 70px;
+        height: 70px;
+        left: -35px;
+    }
+
+    .product_item_2 .product_img {
+        height: 275px;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        width: 135%;
+    }
+
+    .special_product_2 .special_product_text {
+        width: 60%;
+    }
+
+    .special_product_2 .special_product_banner .text h3 {
+        font-size: 28px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item,
+    .best_selling_product_2 .best_selling_product_item_large {
+        height: 350px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text {
+        width: 50%;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text .title {
+        font-size: 28px;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: 270px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: 496px;
+    }
+
+    .brand_2 ul li {
+        width: 12.96%;
+    }
+
+    .blog_2 .blog_img {
+        height: 235px;
+    }
+
+    .banner_2_add {
+        padding: 30px;
+    }
+
+    .banner_2_add .text h2 {
+        font-size: 22px;
+    }
+
+    /*===========================
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .home_grocery .special_product_text {
+        width: 60%;
+    }
+
+    .farming_img {
+        height: 255px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .menu_icon li .user_dropdown {
+        left: 0;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: 53px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 62px;
+    }
+
+    .beauty_banner_img .img {
+        height: 720px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 615px;
+        height: 615px;
+        bottom: 25px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: -10px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 320px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 535px;
+    }
+
+    .beauty_product_item .img {
+        height: 360px;
+    }
+
+    .beauty_add_large .text {
+        padding: 40px;
+        max-width: 85%;
+    }
+
+    .beauty_add_large .text h2,
+    .beauty_add_video_text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 375px;
+    }
+
+    .beauty_countdown_area .text {
+        max-width: 70%;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 560px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 64%;
+        margin-left: 10px;
+    }
+
+    .blog_details_tag li a {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .blog_seidebar_add .text {
+        padding: 25px 25px;
+    }
+
+    .blog_seidebar_add {
+        height: 390px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 450px;
+    }
+
+    .blog_details_center_img {
+        height: 325px;
+    }
+
+    .blog_comment_text {
+        width: 91%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_page_summary ul li .text {
+        width: 75%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .contact_img {
+        margin-right: 25px;
+    }
+
+    .faq_img {
+        height: 475px;
+    }
+
+    .payment_success_text h3 {
+        font-size: 34px;
+    }
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .sidebar_related_product .text {
+        width: 65%;
+    }
+
+    .product_list_item .product_img {
+        height: auto;
+    }
+
+    .shop_page .product_item_2 .product_img {
+        height: 220px;
+    }
+
+    .shop_page .product_list_item .product_img {
+        height: 270px;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+    .shop_details_text {
+        padding: 0px 30px;
+    }
+
+    .details_slider_thumb_item {
+        height: 500px;
+    }
+
+    .details_slider_nav_item {
+        width: 78px;
+        height: 90px;
+    }
+
+    .shop_details_des_area {
+        margin-right: 0;
+    }
+
+    .single_review .text {
+        width: 92%;
+    }
+
+    .barfiller {
+        width: 63%;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .track_order_map {
+        gap: 15px 40px;
+    }
+
+    .track_order_map li {
+        width: 22%;
+    }
+
+    .track_order_map li::before {
+        width: 35px;
+        right: -40px;
+    }
+
+    .tracking_product_info {
+        padding: 30px;
+    }
+
+    .tracking_product_info p {
+        max-width: 80%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_info h4 {
+        font-size: 22px;
+    }
+
+    .vendor_details_message {
+        padding-right: 30px;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .single_vendor .text .title {
+        font-size: 18px;
+    }
+
+    .single_vendor .img {
+        height: 145px;
+    }
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px;
+    }
+
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 250px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 91%;
+    }
+
+    .return_product_item .text {
+        width: 64%;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header form {
+        margin-left: 0;
+    }
+
+    header form .input {
+        width: 55%;
+    }
+
+    .banner_slider .slick-dots {
+        right: 60px;
+    }
+
+    .category_item .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .product_item .product_img {
+        height: 260px;
+    }
+
+    .product_item .cart_btn {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .large_banner_img {
+        height: 410px;
+    }
+
+    .product_item .product_text {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .product_item .rating,
+    .product_item .rating span {
+        font-size: 13px;
+    }
+
+    .bundle_product {
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .bundle_product_banner .text {
+        padding: 100px 25px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 34px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 190px;
+    }
+
+    .bundle_product_banner {
+        height: 750px;
+    }
+
+    .special_product_img {
+        width: 115px;
+        height: 115px;
+        margin-right: 15px;
+    }
+
+    .special_product_text {
+        width: 58%;
+    }
+
+    .special_product_banner .text h3 {
+        font-size: 26px;
+    }
+
+    .special_product_banner {
+        height: 545px;
+    }
+
+    .multi_product_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .multi_product_item .text {
+        width: 60%;
+    }
+
+    .multi_product_item .text .rating {
+        font-size: 14px;
+    }
+
+    .multi_product h3 {
+        font-size: 24px;
+    }
+
+    .blog_img {
+        height: 310px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .banner_slider_img .img {
+        height: 635px;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 1140px;
+    }
+
+    .header_2 form {
+        width: 100%;
+    }
+
+    .main_menu_2 .menu_icon li a.user h5 {
+        display: none;
+    }
+
+    .main_menu_2 .menu_icon li a.user {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    .main_menu_2 .menu_item li {
+        margin-right: 20px;
+    }
+
+    .banner_slider_2 {
+        margin: 25px 12px 0px 12px;
+    }
+
+    .features_item .icon {
+        width: 70px;
+        height: 70px;
+        left: -35px;
+    }
+
+    .features_item {
+        padding: 0;
+        margin-left: 35px;
+    }
+
+    .features_item .text h3 {
+        font-size: 20px;
+    }
+
+    .features_item .text p {
+        font-size: 14px;
+    }
+
+    .features_item .text {
+        padding: 30px 20px 30px 45px;
+    }
+
+    .banner_slider_2_text {
+        max-width: 75%;
+    }
+
+    .product_item_2 .product_img {
+        height: 230px !important;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        width: 98%;
+    }
+
+    .special_product_2 .special_product_banner .text {
+        padding: 40px;
+    }
+
+    .special_product_2 .special_product_text {
+        width: 60%;
+    }
+
+    .special_product_2 .special_product_banner {
+        height: 623px;
+    }
+
+    .product_item_2 .product_text {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item,
+    .best_selling_product_2 .best_selling_product_item_large {
+        height: 315px;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: 225px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: 452px;
+    }
+
+    .brand_2 ul li {
+        width: 15.1%;
+    }
+
+    .blog_2 .blog_img {
+        height: 200px;
+    }
+
+    .blog_2 .blog_img {
+        height: 280px;
+    }
+
+    .footer_2 .footer_2_logo_area {
+        padding-right: 0;
+    }
+
+    /*===========================
+       HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .add_banner_item_text {
+        width: 70%;
+    }
+
+    .grocery_product_img {
+        height: 260px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 412px;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 60px !important;
+        margin-right: 60px !important;
+    }
+
+    .home_grocery .special_product_text {
+        width: 65%;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .download_img {
+        height: 425px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 225px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .farming_img {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .menu_icon li .user_dropdown {
+        left: auto;
+        right: -20px;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: auto;
+        right: 29px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 54px;
+    }
+
+    .beauty_banner_img .img {
+        height: 610px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 530px;
+        height: 530px;
+        bottom: 170px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 270px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 480px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: 130px;
+    }
+
+    .beauty_product_item .img {
+        height: 305px;
+    }
+
+    .beauty_add_large .text {
+        padding: 40px;
+        max-width: 90%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 350px;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 35px;
+        max-width: 70%;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 530px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 35px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 220px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .about_us_img {
+        padding-right: 30px;
+    }
+
+    .about_us_img .img {
+        height: 560px;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 25px;
+    }
+
+    .about_us_img h3 {
+        top: 75%;
+        right: 0;
+    }
+
+    .about_choose_img {
+        width: 420px;
+        height: 100%;
+    }
+
+    .about_choose_text_box {
+        padding: 20px 20px 20px 40px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 57%;
+        margin-left: 10px;
+    }
+
+    .popular_blog_text p {
+        font-size: 14px;
+    }
+
+    .blog_seidebar_add .text h4 {
+        font-size: 20px;
+    }
+
+    .blog_seidebar_add {
+        height: 385px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 46px;
+    }
+
+    .blog_seidebar_add .text {
+        padding: 25px 20px;
+    }
+
+    .blog_left_sidebar .blog_img,
+    .blog_right_sidebar .blog_img {
+        height: 200px;
+    }
+
+    .blog_2 .blog_text {
+        padding: 25px 5px 5px 5px;
+    }
+
+    .blog_text .top li {
+        font-size: 14px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 390px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 280px;
+    }
+
+    .blog_comment_text {
+        width: 89%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_page_summary ul li .text {
+        width: 70%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+    }
+
+    .faq_img {
+        height: 545px;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 30px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-amount {
+        font-size: 30px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-section::after {
+        top: 7px;
+    }
+
+    .payment_success_text h3 {
+        font-size: 32px;
+    }
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .sidebar_related_product .text {
+        width: 74%;
+    }
+
+    .product_list_item .product_img {
+        height: 320px !important;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+    .shop_details_text {
+        padding: 0;
+    }
+
+    .details_slider_thumb_item {
+        height: 510px;
+    }
+
+    .details_slider_nav_item {
+        width: 80px;
+        height: 93px;
+    }
+
+    .single_review .text {
+        width: 92%;
+    }
+
+    .shop_details_des_area {
+        margin-right: 0;
+    }
+
+    .shop_details_sidebar_info {
+        margin-top: 25px;
+    }
+
+    .shop_details_sidebar_store ul {
+        flex-direction: row;
+    }
+
+    .shop_details_sidebar_store ul li {
+        width: 33.33%;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .track_order_map li h4 {
+        font-size: 14px;
+        width: 105px;
+    }
+
+    .track_order_map li::before {
+        width: 60px;
+        right: -68px;
+    }
+
+    .tracking_product_info {
+        padding: 50px;
+    }
+
+    .tracking_product_info p {
+        max-width: 80%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_img {
+        height: 350px;
+    }
+
+    .vendor_details_info h4 {
+        font-size: 22px;
+    }
+
+    .vendor_details_info .rating {
+        margin-bottom: 15px;
+    }
+
+    .vendor_details_message {
+        padding-right: 25px;
+    }
+
+    .vendor_details_message h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .single_vendor .img {
+        height: 170px;
+    }
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    .single_vendor .text .title {
+        font-size: 18px;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_overview_item .icon {
+        width: 65px;
+        height: 65px;
+        line-height: 62px;
+        margin-right: 20px;
+    }
+
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px;
+    }
+
+    .dashboard_recent_review .single_review .text h5 span {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .dashboard_sidebar_user h3 {
+        font-size: 20px;
+    }
+
+    .dashboard_wishlist .product_item_2 .product_img {
+        height: 205px !important;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 90%;
+    }
+
+    .return_product_item .text {
+        width: 56%;
+    }
+
+    .dashboard_return_request {
+        padding: 25px;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header form .input {
+        width: 55%;
+    }
+
+    header .header_support .icon {
+        width: 35px;
+        height: 35px;
+        line-height: 31px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    header .header_support_user {
+        gap: 10px 10px;
+    }
+
+    header .header_support h3 a span,
+    header .header_support h3 a {
+        font-size: 13px;
+    }
+
+    .main_menu .menu_category_area,
+    .menu_category_area .menu_cat_item,
+    .menu_cat_droapdown {
+        width: 230px !important;
+    }
+
+    .menu_category_bar p {
+        font-size: 14px;
+    }
+
+    .menu_cat_item li a {
+        font-size: 13px;
+    }
+
+    .menu_item li {
+        margin-right: 18px;
+    }
+
+    .menu_item li a {
+        font-size: 14px;
+    }
+
+    .banner_slider_text h1 {
+        font-size: 48px;
+    }
+
+    .banner_slider_img .img {
+        height: 540px;
+    }
+
+    .banner_slider .slick-dots {
+        right: 41px;
+    }
+
+    .banner_slider .slick-dots li button:hover::after,
+    .banner_slider .slick-active button::after {
+        width: 35px !important;
+    }
+
+    .banner_slider .slick-dots li button::after {
+        right: -40px;
+    }
+
+    .banner_area {
+        height: 725px;
+    }
+
+    .category_item {
+        padding: 20px;
+    }
+
+    .category_item .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .product_item .product_img {
+        height: 295px;
+    }
+
+    .large_banner_img {
+        height: 520px;
+    }
+
+    .main_menu.menu_fix .menu_category_area {
+        width: 180px !important;
+    }
+
+    .large_banner_text h3 {
+        font-size: 36px;
+    }
+
+    .bundle_product {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .bundle_product_banner .text {
+        padding: 100px 25px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 26px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 215px;
+    }
+
+    .bundle_product_banner {
+        height: 100%;
+    }
+
+    .special_product_img {
+        width: 115px;
+        height: 115px;
+        margin-right: 15px;
+    }
+
+    .special_product_text {
+        width: 51%;
+    }
+
+    .special_product_banner .text {
+        padding: 25px;
+    }
+
+    .special_product_banner .text h3 {
+        font-size: 24px;
+    }
+
+    .special_product_banner {
+        height: 543px;
+    }
+
+    .multi_product_item .img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .multi_product_item {
+        gap: 10px;
+    }
+
+    .multi_product_item .text {
+        width: 54%;
+    }
+
+    .multi_product_item .text .rating span {
+        display: none;
+    }
+
+    .multi_product h3 {
+        font-size: 22px;
+    }
+
+    .blog_img {
+        height: 255px;
+    }
+
+    .footer_info {
+        padding: 50px 20px;
+    }
+
+    .footer_info_item .icon {
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+    }
+
+    .footer_info_item .text {
+        width: 65%;
+    }
+
+    .footer_info_item .text h3 {
+        font-size: 18px;
+    }
+
+    .footer_info_item .text p {
+        font-size: 12px;
+    }
+
+    .footer_logo_area p,
+    .footer_2_logo_area p,
+    .footer_logo_area span,
+    .footer_link ul li a,
+    .footer_newsletter p,
+    .footer_copyright p {
+        font-size: 14px;
+    }
+
+    .progress-wrap {
+        right: 25px;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .header_2 form {
+        width: 100%;
+    }
+
+    .header_2 .topbar_right .nice-select.language {
+        width: 100px;
+    }
+
+    .main_menu_2 .menu_icon {
+        gap: 6px;
+    }
+
+    .main_menu_2 .menu_icon li a.user h5 {
+        display: none;
+    }
+
+    .main_menu_2 .menu_icon li a.user {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    .banner_slider_2 {
+        height: 400px;
+        margin: 25px 12px 0px 12px;
+    }
+
+    .banner_slider_2_text {
+        max-width: 75%;
+    }
+
+    .banner_slider_2_text h1 {
+        font-size: 36px;
+    }
+
+    .banner_2_add {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .banner_2_add .text h2 {
+        font-size: 20px;
+    }
+
+    .product_item_2 .product_img {
+        height: 265px !important;
+    }
+
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 960px;
+    }
+
+    .header_2 form .input {
+        width: 46%;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        width: 63%;
+    }
+
+    .special_product_2 .special_product_banner {
+        display: none;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text {
+        left: 60px;
+    }
+
+    .brand_2 ul li {
+        width: 18.2%;
+    }
+
+    .blog_2 .blog_img {
+        height: 230px;
+    }
+
+    .footer_2 .footer_2_logo_area {
+        padding-right: 0;
+    }
+
+    .footer_2 .footer_2_logo_area ul li span {
+        font-size: 13px;
+    }
+
+    .footer_2 .footer_2_logo_area ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .footer_2 .footer_logo_area span {
+        margin-bottom: 10px;
+    }
+
+    .main_menu_2 .menu_icon li a.user b {
+        width: 35px;
+        height: 35px;
+        line-height: 20px;
+    }
+
+    .main_menu_2 .menu_item li {
+        margin-right: 15px;
+    }
+
+    .category_2 .category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .footer_2 .footer_copyright {
+        margin-top: 85px !important;
+    }
+
+    /*===========================
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 50px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0px 50px;
+    }
+
+    .home_grocery .slick-arrow.nextArrow,
+    .home_grocery .prevArrow.slick-arrow {
+        right: -40px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -40px;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 15px;
+    }
+
+    .add_banner_item_text {
+        width: 75%;
+    }
+
+    .add_banner_item_text h2 {
+        font-size: 34px;
+    }
+
+    .grocery_product_img {
+        height: 290px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        right: 12px !important;
+    }
+
+    .grocery_best_sell .prevArrow.slick-arrow {
+        left: auto !important;
+        right: 60px !important;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .farming_img {
+        height: 180px;
+    }
+
+    .download_img {
+        height: 355px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 190px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 445px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 25px;
+    }
+
+    .footer_grocery .footer_info_item .text h3 {
+        font-size: 16px;
+    }
+
+    .home_grocery .special_product_text {
+        width: 57%;
+    }
+
+    .farming::after {
+        width: 90px;
+        height: 93px;
+        top: 30px;
+    }
+
+    .download_text {
+        padding-right: 0;
+        margin-left: 30px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .beauty_banner_text h1 {
+        font-size: 50px;
+    }
+
+    .beauty_banner_img .img {
+        height: 575px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 500px;
+        height: 500px;
+        bottom: 135px;
+        left: -35px;
+    }
+
+    .beauty_banner_img::after {
+        bottom: 100px;
+    }
+
+    .beauty_banner_slider_item {
+        height: 820px;
+    }
+
+    .beauty_banner_text p {
+        max-width: 90%;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 350px;
+    }
+
+    .beauty_featured_products_banner .text h2 {
+        font-size: 28px;
+    }
+
+    .beauty_featured_products_banner .text {
+        padding: 25px;
+    }
+
+    .beauty_featured_products_banner {
+        height: 565px;
+    }
+
+    .beauty_product_item .img {
+        height: 350px;
+    }
+
+    .beauty_add_large .text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_add_large,
+    .beauty_add_video {
+        height: 350px;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 35px;
+        max-width: 80%;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 90%;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 35px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 24px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: 510px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 215px;
+    }
+
+    .beauty_footer .footer_2_logo_area ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .beauty_footer .footer_logo_area p {
+        margin-bottom: 20px;
+    }
+
+    .menu_icon li .user_dropdown {
+        left: auto;
+        right: -20px;
+    }
+
+    .menu_icon li .user_dropdown::after {
+        left: auto;
+        right: 25px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .about_us_img p {
+        position: initial;
+    }
+
+    .about_us_img .img {
+        height: 500px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        top: 70%;
+        right: 0;
+        width: 150px;
+        height: 150px;
+        font-size: 42px;
+    }
+
+    .about_choose_text_box {
+        padding: 20px 20px 20px 40px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_video_area {
+        height: 400px;
+    }
+
+    .about_us_text .description {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 60%;
+    }
+
+    .blog_details_tag li a {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .blog_seidebar_add .text h4 {
+        font-size: 20px;
+    }
+
+    .blog_seidebar_add {
+        height: 385px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 46px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 290px;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 32px !important;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 205px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_comment_text {
+        width: 85%;
+    }
+
+    .blog_details_comment_input {
+        padding: 35px;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        padding: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 65%;
+    }
+
+    .cart_summary_btn .common_btn {
+        width: 100%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 250px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .checkout_card ul li {
+        width: 70px;
+        height: 38px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+        height: 563px;
+    }
+
+    .contact_form h2 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .contact_map {
+        height: 400px;
+    }
+
+    .faq_img {
+        height: 455px;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 28px;
+    }
+
+    .falsh_deals_heading {
+        gap: 15px 15px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-amount {
+        font-size: 24px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-section::after {
+        top: 2px;
+    }
+
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .product_page_top_button p {
+        font-size: 14px;
+    }
+
+    .product_page_sorting .nice-select {
+        width: 160px;
+    }
+
+    .product_page_sorting .select_js.show {
+        width: 120px;
+    }
+
+    .sidebar_related_product .text {
+        width: 77%;
+    }
+
+    .product_list_item .title {
+        font-size: 20px;
+    }
+
+    .product_list_item .product_text {
+        padding: 0;
+    }
+
+    .shop_page .product_list_item .product_img {
+        height: 250px !important;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+    .shop_details_text {
+        padding: 0;
+    }
+
+    .details_slider_thumb_item {
+        height: 380px;
+    }
+
+    .details_slider_nav_item {
+        width: 105px;
+        height: 118px;
+    }
+
+    .shop_details_text .details_title {
+        font-size: 30px;
+    }
+
+    .shop_details_sidebar_info {
+        margin-top: 25px;
+    }
+
+    .shop_details_des_area {
+        margin-right: 0;
+    }
+
+    .single_review .text {
+        width: 91%;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+    header form .select2-container {
+        width: 170px !important;
+    }
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .track_order_map {
+        gap: 15px;
+    }
+
+    .track_order_map li {
+        width: 23%;
+        gap: 10px;
+    }
+
+    .track_order_map li::before {
+        display: none;
+    }
+
+    .track_order_map li h4 {
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .tracking_product_info {
+        padding: 30px;
+    }
+
+    .tracking_product_info p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_img {
+        height: 315px;
+    }
+
+    .vendor_details_info h4 {
+        font-size: 22px;
+    }
+
+    .vendor_details_message {
+        padding: 30px;
+    }
+
+    .vendor_details_info {
+        padding-top: 15px;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    .single_vendor .img {
+        height: 140px;
+    }
+
+    .single_vendor .text .title {
+        font-size: 18px;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_sidebar_user {
+        padding: 30px 30px 20px 30px;
+    }
+
+    .dashboard_sidebar_menu ul li a {
+        font-size: 15px;
+    }
+
+    .dashboard_sidebar_user h3 {
+        font-size: 18px;
+    }
+
+    .dashboard_sidebar_user p {
+        font-size: 14px;
+    }
+
+    .dashboard_recent_review {
+        margin-top: 25px;
+    }
+
+    .dashboard_reviews .single_review .text {
+        width: 88% !important;
+    }
+
+    .dashboard_return_request {
+        padding: 20px;
+    }
+
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .return_product_item {
+        gap: 10px;
+    }
+
+    .return_product_item .text {
+        width: 61%;
+    }
+
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 75%;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        height: 70px;
+        line-height: 70px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .banner_area {
+        margin-top: 0;
+        height: auto;
+        padding-top: 170px;
+    }
+
+    .banner_slider_text {
+        margin-top: 30px;
+    }
+
+    .banner_slider_text h1 {
+        font-size: 36px;
+    }
+
+    .banner_slider_img .img {
+        height: 460px;
+    }
+
+    .category_item .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .flash_sell .nextArrow,
+    .flash_sell .prevArrow,
+    .category .nextArrow,
+    .category .prevArrow {
+        right: 0px;
+    }
+
+    .flash_sell .prevArrow,
+    .category .prevArrow {
+        left: 0;
+    }
+
+    .product_item .product_img {
+        height: 215px !important;
+    }
+
+    .product_item .product_img .discount_list li {
+        font-size: 12px;
+    }
+
+    .product_item .product_img .discount_list {
+        top: 10px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .category_item {
+        padding: 15px 10px;
+    }
+
+    .favourite_product_2 .product_item .rating span {
+        display: none;
+    }
+
+    .product_item .product_text {
+        padding: 10px 15px 15px 15px;
+    }
+
+    .product_item .rating {
+        margin: 5px 0px 9px 0px;
+    }
+
+    .product_item .cart_btn {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .product_item .product_img .btn_list {
+        right: 10px;
+    }
+
+    .product_item:hover .product_img .btn_list {
+        top: 10px;
+    }
+
+    .product_item .color {
+        max-width: 170px;
+    }
+
+    .flash_sell .simply-countdown {
+        margin-top: 10px;
+    }
+
+    .large_banner_text h3 {
+        font-size: 28px;
+    }
+
+    .bundle_product {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .bundle_product_banner {
+        display: none;
+    }
+
+    .bundle_product_banner .text {
+        padding: 40px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 215px;
+    }
+
+    .special_product_banner .text h3 {
+        font-size: 26px;
+    }
+
+    .multi_product_item {
+        gap: 10px;
+    }
+
+    .multi_product_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .multi_product_item .text {
+        width: 60%;
+    }
+
+    .multi_product h3 {
+        font-size: 22px;
+    }
+
+    .footer_info {
+        padding: 15px 15px 30px 15px;
+    }
+
+    .footer_info_item {
+        margin-top: 10px;
+    }
+
+    .footer_link {
+        margin-top: 50px;
+    }
+
+    .footer_link h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer_copyright {
+        margin-top: 100px !important;
+    }
+
+    .footer_copyright .payment {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .progress-wrap {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .large_banner_img {
+        height: 385px;
+    }
+
+    .special_product_img {
+        margin-right: 15px;
+        width: 120px;
+    }
+
+    .special_product_text {
+        width: 58%;
+    }
+
+    .blog_img {
+        height: 290px;
+    }
+
+    .footer_info_item .text {
+        width: 68%;
+    }
+
+    .flash_sell .simply-amount {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 18px;
+    }
+
+    .flash_sell .simply-amount::before {
+        width: 49px;
+        height: 49px;
+        top: 3px;
+        left: 3px;
+    }
+
+    .banner_slider .slick-dots {
+        top: -55px;
+        right: 55px;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .banner_2 {
+        margin-top: 72px;
+    }
+
+    .banner_slider_2 {
+        margin: 12px 12px 0px 12px;
+        height: 370px;
+    }
+
+    .banner_slider_2_text {
+        max-width: 80%;
+    }
+
+    .banner_2_add .text {
+        width: 55%;
+    }
+
+    .flash_sell_2 .simply-amount {
+        font-size: 16px;
+        width: 35px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .flash_sell_2 .simply-section {
+        padding: 5px 10px;
+    }
+
+    .flash_sell_2 .simply-countdown {
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .product_item_2 {
+        padding: 0;
+    }
+
+    .special_product_2 .special_product_banner {
+        height: 700px;
+    }
+
+    .special_product_2 .special_product_banner .text {
+        width: 70%;
+    }
+
+    .special_product_2 .special_product_banner .text h3 {
+        font-size: 32px;
+    }
+
+    .special_product_img {
+        width: 115px;
+        height: 105px;
+        margin-right: 10px;
+    }
+
+    .special_product_2 .special_product_text {
+        width: 60%;
+    }
+
+    .best_selling_product_item {
+        height: auto;
+    }
+
+    .best_selling_product_item_large {
+        height: 240px;
+    }
+
+    .best_selling_product_item_large .text {
+        width: 60%;
+    }
+
+    .best_selling_product_item_large .text .title {
+        font-size: 20px;
+    }
+
+    .best_selling_product_item_large .text p {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: auto;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text {
+        padding: 25px;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .product_item_2 .product_img .discount_list {
+        left: 10px;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: 210px;
+    }
+
+    .brand_2 ul li {
+        width: 23%;
+    }
+
+    .brand_2 ul li a {
+        padding: 17px;
+    }
+
+    .blog_2 .blog_img {
+        height: 260px;
+    }
+
+    .subscription_2_text {
+        padding: 100px 30px 58px 30px;
+    }
+
+    .subscription_2_text h2,
+    .subscription_2_text h2 span {
+        font-size: 28px;
+    }
+
+    .footer_2 .footer_copyright {
+        margin-top: 85px !important;
+    }
+
+    .brand_2 ul {
+        gap: 15px;
+    }
+
+    .flash_sell_2 .view_all_btn_area {
+        padding-top: 20px;
+        margin-left: auto;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        display: none;
+    }
+
+    .trending_product_2 .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 10px;
+    }
+
+    .product_item_2 .product_img {
+        height: 215px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item {
+        height: 320px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text .title {
+        font-size: 28px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text {
+        width: 42%;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large {
+        height: 350px;
+    }
+
+    .category_2 .category_item .img {
+        width: 152px;
+        height: 150px;
+    }
+
+    .footer_2 .footer_copyright .payment {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 720px;
+    }
+
+    .product_item .rating span {
+        display: none;
+    }
+
+    .banner_2_add {
+        height: 350px;
+    }
+
+    .footer_2 .footer_2_logo_area {
+        padding-right: 0;
+    }
+
+    .product_item_2 .product_text {
+        padding: 12px 15px 15px 15px;
+    }
+
+    .footer_2 .footer_logo_area span {
+        margin-bottom: 10px;
+    }
+
+    /*===========================
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 46px;
+    }
+
+    .grocery_banner {
+        padding-top: 65px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        width: 60%;
+    }
+
+    .section_heading h3,
+    .section_heading h3 span {
+        font-size: 32px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 30px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll li a::after {
+        right: -18px;
+    }
+
+    .grocery_product_img {
+        height: 215px;
+    }
+
+    .grocery_product_text p {
+        font-size: 16px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .home_grocery .special_product_banner .text {
+        padding: 50px 25px;
+    }
+
+    .grocery_best_sell .special_product_banner .text h3 {
+        font-size: 22px;
+    }
+
+    .grocery_best_sell .special_product_banner {
+        height: 365px;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .farming::after {
+        width: 80px;
+        height: 83px;
+        top: 20px;
+    }
+
+    .farming_img {
+        height: 240px;
+    }
+
+    .farming_text {
+        padding-bottom: 12px;
+    }
+
+    .download_img {
+        height: 260px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 215px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 30px 30px 40px 30px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .home_grocery .slick-arrow.nextArrow {
+        right: -10px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -10px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow {
+        right: 12px;
+    }
+
+    .grocery_best_sell .prevArrow.slick-arrow {
+        left: auto;
+    }
+
+    .download_text {
+        padding-right: 0;
+        margin-left: 30px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 25px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: 515px;
+        width: 420px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 500px;
+        height: 500px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -48px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: 590px;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 32px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 255px;
+    }
+
+    .beauty_product_item .img {
+        height: 255px;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 60%;
+    }
+
+    .beauty_add_large {
+        height: 400px;
+    }
+
+    .beauty_add_video {
+        height: 400px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 4px 13px;
+        font-size: 13px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner {
+        height: 500px;
+    }
+
+    .beauty_countdown_area {
+        height: 500px;
+    }
+
+    .beauty_countdown_banner .text h2 {
+        font-size: 24px;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 210px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 85px !important;
+    }
+
+    .home_beauty .view_all_btn_area {
+        max-height: 50px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 50px 25px;
+    }
+
+    .beauty_footer .footer_copyright .payment {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .beauty_footer .footer_logo_area span {
+        margin-bottom: 10px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 42px;
+    }
+
+    .about_us_img .img {
+        height: 630px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 575px;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 300px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 85px;
+        height: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .blog_seidebar_add {
+        height: 530px;
+    }
+
+    .popular_blog_text {
+        width: 73%;
+    }
+
+    .blog_details_right {
+        margin-top: 50px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 325px;
+    }
+
+    .blog_details_center_img {
+        height: 235px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 87%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 81%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_info {
+        padding: 35px 35px 35px 75px;
+    }
+
+    .contact_img {
+        height: 640px;
+        margin-right: 0;
+    }
+
+    .contact_map {
+        height: 350px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+    .faq_img {
+        height: 575px;
+        padding: 0 !important;
+    }
+
+    .sign_in_form {
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .payment_success_text .img {
+        width: 515px;
+        height: 330px;
+    }
+
+    .payment_success_text h3 {
+        font-size: 34px;
+    }
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .shop_filter_area {
+        display: none;
+    }
+
+    .shop_filter_area.show {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .product_list_item .short_description {
+        display: none;
+    }
+
+    .product_list_item .common_btn {
+        margin-top: 15px;
+    }
+
+    .product_list_item .product_text {
+        padding: 0 !important;
+    }
+
+    .product_list_item .product_img {
+        height: 275px !important;
+    }
+
+    .sidebar_related_product .text {
+        width: 80%;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+    .details_slider_thumb_item {
+        height: 475px;
+    }
+
+    .details_slider_nav_item {
+        width: 130px;
+        height: 150px;
+    }
+
+    .shop_details_text {
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .shop_details_text .details_title {
+        font-size: 34px;
+    }
+
+    .shop_details_des_area {
+        padding: 30px;
+        margin-right: 0;
+    }
+
+    .single_review .text {
+        width: 88% !important;
+    }
+
+    .shop_details_sidebar_info {
+        margin-top: 25px;
+    }
+
+    .related_products .section_heading_2 h3 span::after {
+        width: 120px;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .tack_order_form {
+        padding: 40px;
+    }
+
+    .track_order_map {
+        gap: 15px;
+    }
+
+    .track_order_map li {
+        width: 48.5%;
+    }
+
+    .track_order_map li::before {
+        display: none;
+    }
+
+    .tracking_product_info {
+        padding: 40px;
+    }
+
+    .tracking_product_info .icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .tracking_product_info .icon svg {
+        width: 42px;
+    }
+
+    .tracking_product_info h3 {
+        font-size: 26px;
+    }
+
+    .tracking_product_list {
+        padding: 40px;
+    }
+
+    .tracking_product_info p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_img {
+        height: 435px;
+    }
+
+    .vendor_details_info {
+        padding: 30px;
+    }
+
+    .vendor_details_contact {
+        padding: 0px 30px;
+    }
+
+    .vendor_details_info h4 {
+        font-size: 24px;
+    }
+
+    .vendor_details_message {
+        padding: 30px;
+    }
+
+    .vendor_details_info .rating {
+        margin-bottom: 0;
+    }
+
+    .vendor_details .product_page_sorting {
+        justify-content: space-between;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .become_vendor_form {
+        margin-top: 25px;
+    }
+
+    .single_vendor .img {
+        height: 160px;
+    }
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    .single_vendor .text .title {
+        font-size: 18px;
+    }
+
+    .header_2 {
+        z-index: 999;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_sidebar_area {
+        top: 0;
+    }
+
+    .dashboard_sidebar {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .dashboard_content {
+        padding: 30px;
+    }
+
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .dashboard_recent_review {
+        margin-top: 25px;
+    }
+
+    .dashboard_return_request {
+        padding: 20px;
+    }
+
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .return_product_item {
+        gap: 10px;
+    }
+
+    .return_product_item .text {
+        width: 62%;
+    }
+
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 75%;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        height: 70px;
+        line-height: 70px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .banner_area {
+        margin-top: 0;
+        height: auto;
+        padding-top: 165px;
+    }
+
+    .banner_slider_text h1 {
+        font-size: 48px;
+    }
+
+    .banner_slider_img {
+        justify-content: center;
+    }
+
+    .banner_slider_img .img {
+        height: 450px;
+        bottom: -50px;
+    }
+
+    .banner_slider_img::after {
+        right: 0;
+    }
+
+    .category_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .section_heading h3,
+    .section_heading h3 span {
+        font-size: 26px;
+    }
+
+    .view_all_btn_area {
+        max-height: 60px;
+    }
+
+    .flash_sell .nextArrow,
+    .flash_sell .prevArrow,
+    .category .nextArrow,
+    .category .prevArrow {
+        right: 0px;
+    }
+
+    .flash_sell .prevArrow,
+    .category .prevArrow {
+        left: 0;
+    }
+
+    .product_item .product_img {
+        height: 245px !important;
+    }
+
+    .product_item .product_img .discount_list li {
+        font-size: 12px;
+    }
+
+    .product_item .product_img .discount_list {
+        top: 10px;
+    }
+
+    .title {
+        font-size: 16px !important;
+    }
+
+    .category_item {
+        padding: 15px 10px;
+    }
+
+    .product_item .product_text {
+        padding: 10px 15px 15px 15px;
+    }
+
+    .product_item .rating {
+        margin: 5px 0px 9px 0px;
+    }
+
+    .product_item .cart_btn {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .product_item .product_img .btn_list {
+        right: 10px;
+    }
+
+    .product_item:hover .product_img .btn_list {
+        top: 10px;
+    }
+
+    .product_item .color {
+        max-width: 170px;
+    }
+
+    .flash_sell .simply-countdown {
+        margin-top: 10px;
+    }
+
+    .large_banner_text h3 {
+        font-size: 30px;
+    }
+
+    .large_banner_text {
+        margin-top: 35px;
+    }
+
+    .large_banner {
+        padding-bottom: 70px;
+    }
+
+    .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 25px;
+    }
+
+    .pws_tabs_container ul.pws_tabs_controll li a {
+        font-size: 14px;
+    }
+
+    .pws_tabs_container ul.pws_tabs_controll li a::after {
+        right: -15px;
+        top: 8px;
+    }
+
+    .bundle_product {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .bundle_product_banner {
+        display: none;
+    }
+
+    .bundle_product_banner .text {
+        padding: 40px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: 245px;
+    }
+
+    .brand .brand_marquee ul li {
+        width: 140px;
+    }
+
+    .multi_product_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .multi_product_item .text {
+        width: 74%;
+    }
+
+    .multi_product h3 {
+        font-size: 22px;
+    }
+
+    .footer_info {
+        padding: 15px 15px 30px 15px;
+    }
+
+    .footer_info_item {
+        margin-top: 10px;
+    }
+
+    .footer_link {
+        margin-top: 50px;
+    }
+
+    .footer_link h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer_copyright {
+        margin-top: 100px !important;
+    }
+
+    .footer_copyright p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .progress-wrap {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .large_banner_img {
+        height: 385px;
+    }
+
+    .brand .brand_marquee ul li a {
+        padding: 10px;
+    }
+
+    .special_product_text {
+        width: 72%;
+    }
+
+    .blog_img {
+        height: 445px;
+    }
+
+    .footer_info_item .icon {
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+    }
+
+    .footer_info_item .text {
+        width: 62%;
+    }
+
+    .footer_info_item .text h3 {
+        font-size: 18px;
+    }
+
+    .footer_info_item .text p {
+        font-size: 12px;
+    }
+
+    .banner_slider .slick-dots {
+        right: 60px;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .banner_2 {
+        margin-top: 72px;
+    }
+
+    .banner_slider_2 {
+        margin: 12px 12px 0px 12px;
+        height: 325px;
+    }
+
+    .banner_slider_2_text {
+        padding: 30px;
+        max-width: 75%;
+    }
+
+    .banner_slider_2_text h1 {
+        font-size: 32px;
+    }
+
+    .banner_2_add .text {
+        width: 80%;
+    }
+
+    .banner_2_add .text h2 {
+        font-size: 32px;
+    }
+
+    .flash_sell_2 .simply-amount {
+        font-size: 16px;
+    }
+
+    .flash_sell_2 .simply-section {
+        padding: 5px 10px;
+    }
+
+    .flash_sell_2 .simply-countdown {
+        margin-right: auto;
+    }
+
+    .section_heading_2 h3 span::after {
+        width: 70px;
+        bottom: -18px;
+    }
+
+    .product_item_2 {
+        padding: 0;
+    }
+
+    .special_product_2 .section_heading_2 h3 span::after {
+        width: 90px;
+    }
+
+    .special_product_2 .special_product_banner {
+        height: 650px;
+    }
+
+    .special_product_img {
+        width: 115px;
+        height: 105px;
+        margin-right: 10px;
+    }
+
+    .special_product_2 .special_product_text {
+        width: 73%;
+    }
+
+    .trending_product_2 .section_heading_2 h3 span::after {
+        width: 110px;
+    }
+
+    .best_selling_product_item {
+        height: auto;
+    }
+
+    .best_selling_product_item_large {
+        height: 240px;
+    }
+
+    .best_selling_product_item_large .text {
+        width: 60%;
+    }
+
+    .best_selling_product_item_large .text .title {
+        font-size: 20px;
+    }
+
+    .best_selling_product_item_large .text p {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .best_selling_product_2 .section_heading_2 h3 span::after,
+    .new_arrival_2 .section_heading_2 h3 span::after {
+        width: 70px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: auto;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text {
+        padding: 25px;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .favourite_product_2 .section_heading_2 h3 span::after {
+        width: 100px;
+    }
+
+    .product_item_2 .product_img .discount_list {
+        left: 10px;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: 235px;
+    }
+
+    .brand_2 ul li {
+        width: 31%;
+    }
+
+    .brand_2 ul li a {
+        padding: 20px;
+    }
+
+    .brand_2 .section_heading_2 h3 span::after {
+        width: 90px;
+    }
+
+    .blog_2 .blog_img {
+        height: 420px;
+    }
+
+    .subscription_2_text {
+        padding: 100px 15px 58px 15px;
+    }
+
+    .subscription_2_text h2,
+    .subscription_2_text h2 span {
+        font-size: 28px;
+    }
+
+    .footer_2 .footer_copyright {
+        margin-top: 85px !important;
+    }
+
+    .brand_2 ul {
+        gap: 15px;
+    }
+
+    .flash_sell_2 .view_all_btn_area {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        display: none;
+    }
+
+    .banner_2_add {
+        padding: 30px;
+    }
+
+    .trending_product_2 .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 15px;
+        top: -43px;
+    }
+
+    .product_item_2 .product_img {
+        height: 245px;
+    }
+
+    .product_item_2 .product_text {
+        padding: 12px 15px 15px 15px !important;
+    }
+
+    .best_selling_product_2 .best_selling_product_item {
+        height: 340px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text .title {
+        font-size: 24px;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large .text {
+        width: 45%;
+    }
+
+    .best_selling_product_2 .best_selling_product_item_large {
+        height: 300px;
+    }
+
+    .default_home .container,
+    .home_beauty .container {
+        max-width: 540px;
+    }
+
+    .category_2 .category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .footer_2 .footer_2_logo_area {
+        padding-right: 0;
+    }
+
+    .category_2 .category_item .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .trending_product_2 ul.pws_tabs_controll li a {
+        border: none;
+        padding: 0;
+    }
+
+    .footer_2 .footer_logo_area span {
+        margin-bottom: 10px;
+    }
+
+    /*===========================
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+    }
+
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 42px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 25px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        width: 70%;
+    }
+
+    .home_grocery .add_banner_item_text h2 {
+        font-size: 32px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        position: initial;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .grocery_product_img {
+        height: 245px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 15px !important;
+        margin-right: 15px;
+    }
+
+    .grocery_brand .brand_marquee ul li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .farming::after {
+        width: 70px;
+        height: 73px;
+        top: 25px;
+    }
+
+    .farming_img {
+        height: 175px;
+    }
+
+    .farming_text {
+        padding-bottom: 12px;
+    }
+
+    .download_img {
+        height: 485px;
+        margin-bottom: 25px;
+    }
+
+    .blog_grocery .blog_img {
+        height: 330px;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .footer_grocery .footer_copyright {
+        margin-top: 95px !important;
+    }
+
+    .home_grocery .slick-arrow.nextArrow {
+        right: -8px;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: -8px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        top: 50%;
+        transform: translatey(-50%);
+        -webkit-transform: translatey(-50%);
+        -moz-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+        -o-transform: translatey(-50%);
+    }
+
+    .grocery_product_text p {
+        font-size: 16px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 50px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 52px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text p {
+        max-width: 100%;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: 430px;
+        width: 350px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 400px;
+        height: 400px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -25px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: 590px;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 24px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: 290px;
+    }
+
+    .beauty_product_item .img {
+        height: 290px;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_add_large .text {
+        max-width: 75%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 32px;
+    }
+
+    .beauty_add_large {
+        height: 360px;
+    }
+
+    .beauty_add_video {
+        height: 360px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 0 2px;
+        border: none;
+        color: var(--colorBlack);
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+        color: var(--colorOlive);
+        background: none;
+    }
+
+    .beauty_product_item .img .discount_list li {
+        padding: 2px 7px;
+        font-size: 12px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner {
+        height: 650px;
+    }
+
+    .beauty_countdown_area {
+        height: 530px;
+    }
+
+    .beauty_countdown_banner .text h2,
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 50px 25px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 210px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 75px !important;
+    }
+
+    .home_beauty .view_all_btn_area {
+        max-height: 45px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 34px;
+    }
+
+    .about_us_img .img {
+        height: 560px;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        right: 0;
+        top: 80%;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: 425px;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 250px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .blog_seidebar_add {
+        height: 600px;
+    }
+
+    .popular_blog_text {
+        width: 75%;
+    }
+
+    .blog_details_right {
+        margin-top: 50px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: 240px;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 36px !important;
+    }
+
+    .blog_details_left ul li::after,
+    .blog_details_left ol li::after {
+        top: 6px;
+    }
+
+    .blog_details_review {
+        padding: 50px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: 170px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 82%;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 81%;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_img {
+        margin-right: 0;
+        height: 510px;
+    }
+
+    .contact_form h2 {
+        margin-bottom: 10px;
+    }
+
+    .contact_map {
+        height: 350px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+
+
+    /*===========================
+        ERROR PAGE START
+    ===========================*/
+    .error_text h2 {
+        font-size: 140px;
+    }
+
+    .error_text h4 {
+        font-size: 36px;
+    }
+
+    .error_text p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ERROR PAGE END
+    ===========================*/
+
+    .faq_img {
+        height: 465px;
+    }
+
+    .faq_page .faq_title {
+        font-size: 30px;
+    }
+
+    .falsh_deals_heading .simply-countdown {
+        gap: 10px 20px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-amount {
+        font-size: 32px;
+    }
+
+    .falsh_deals_heading .simply-countdown .simply-section::after {
+        top: 7px;
+        right: -13px;
+    }
+
+    .sign_in_form {
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .sign_in_form h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .payment_success_text .img {
+        width: 515px;
+        height: 330px;
+    }
+
+    .payment_success_text h3 {
+        font-size: 34px;
+    }
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .shop_filter_area {
+        display: none;
+    }
+
+    .shop_filter_area.show {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .product_page_top_button p {
+        display: none;
+    }
+
+    .product_list_item .short_description {
+        display: none;
+    }
+
+    .product_list_item .common_btn {
+        margin-top: 15px;
+    }
+
+    .product_list_item .product_text {
+        padding: 0 !important;
+    }
+
+    .product_list_item .title {
+        -webkit-line-clamp: 2;
+    }
+
+    .sidebar_related_product .text {
+        width: 85%;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+    .details_slider_thumb_item {
+        height: 575px;
+    }
+
+    .details_slider_nav_item {
+        width: 95px;
+        height: 105px;
+        margin: 5px 12px 0px 12px;
+    }
+
+    .shop_details_text {
+        padding: 25px 0px 0px 0px;
+    }
+
+    .shop_details_text .details_title {
+        font-size: 32px;
+    }
+
+    .shop_details_text .price {
+        font-size: 24px;
+    }
+
+    .shop_details_des_area {
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .shop_details_sidebar {
+        margin-top: 25px;
+    }
+
+    .related_products .section_heading_2 h3 span::after {
+        width: 95px;
+    }
+
+    .shop_details_des_area .nav-pills button {
+        font-size: 14px;
+    }
+
+    .single_review .text {
+        width: 100% !important;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .tack_order_form {
+        padding: 40px;
+    }
+
+    .track_order_map {
+        gap: 15px;
+    }
+
+    .track_order_map li {
+        width: 48%;
+    }
+
+    .track_order_map li::before {
+        display: none;
+    }
+
+    .tracking_product_info {
+        padding: 40px;
+    }
+
+    .tracking_product_info .icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .tracking_product_info .icon svg {
+        width: 42px;
+    }
+
+    .tracking_product_info h3 {
+        font-size: 26px;
+    }
+
+    .tracking_product_list {
+        padding: 40px;
+    }
+
+    .tracking_product_info p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_img {
+        height: 320px;
+    }
+
+    .vendor_details_info {
+        padding: 30px;
+    }
+
+    .vendor_details_contact {
+        padding: 0px 30px;
+    }
+
+    .vendor_details_info h4 {
+        font-size: 22px;
+    }
+
+    .vendor_details_message {
+        padding: 30px;
+    }
+
+    .vendor_details_info .rating {
+        margin-bottom: 0;
+    }
+
+    .vendor_details .product_page_sorting {
+        justify-content: space-between;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .become_vendor_form {
+        padding: 35px;
+        margin-top: 25px;
+    }
+
+    .become_vendor_form h3 {
+        font-size: 22px;
+    }
+
+    .single_vendor .img {
+        height: 250px;
+    }
+
+    .header_2 {
+        z-index: 999;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_sidebar_area {
+        top: 0;
+    }
+
+    .dashboard_sidebar {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .dashboard_content {
+        padding: 25px;
+    }
+
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .dashboard_recent_review {
+        margin-top: 25px;
+    }
+
+    .return_product_item .text {
+        width: 66%;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    .invoice_table table tr th,
+    .invoice_table table tr td {
+        padding: 15px;
+    }
+
+    .dashboard_invoice_header .text {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 100%;
+    }
+
+    .dashboard_invoice_footer a {
+        position: initial;
+        margin-top: 20px;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (max-width: 575.99px) {
+
+    /*===========================
+        HOME PAGE 01 START
+    ===========================*/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        line-height: 70px;
+        z-index: 99;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .banner_area {
+        margin-top: 0;
+        height: auto;
+        padding-top: 165px;
+    }
+
+    .banner_slider_text {
+        padding: 0px 15px;
+    }
+
+    .banner_slider_text h1 {
+        font-size: 34px;
+    }
+
+    .banner_slider_img {
+        justify-content: center;
+    }
+
+    .banner_slider_img .img {
+        height: 350px;
+        margin-bottom: -50px;
+        margin-top: 50px;
+    }
+
+    .banner_slider_img::after {
+        right: 0;
+    }
+
+    .category_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .section_heading h3,
+    .section_heading h3 span {
+        font-size: 24px;
+    }
+
+    .view_all_btn_area {
+        display: none !important;
+    }
+
+    .nextArrow,
+    .prevArrow {
+        background: none !important;
+        border: none !important;
+        color: var(--colorBlack) !important;
+    }
+
+    .flash_sell .nextArrow,
+    .flash_sell .prevArrow,
+    .category .nextArrow,
+    .category .prevArrow {
+        right: 0px;
+    }
+
+    .flash_sell .prevArrow,
+    .category .prevArrow {
+        left: 0;
+    }
+
+    .product_item .product_img {
+        height: auto !important;
+    }
+
+    .product_item .product_img .discount_list li {
+        padding: 1px 7px;
+        font-size: 12px;
+    }
+
+    .product_item .product_img .discount_list {
+        top: 10px;
+    }
+
+    .title {
+        font-size: 14px !important;
+    }
+
+    .category_item {
+        padding: 15px 10px;
+    }
+
+    .product_item .rating span {
+        display: none;
+    }
+
+    .product_item .product_text {
+        padding: 10px 15px 15px 15px;
+    }
+
+    .product_item .product_img .btn_list li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .product_item .price {
+        font-size: 14px;
+    }
+
+    .product_item .rating {
+        margin: 5px 0px 9px 0px;
+        font-size: 12px;
+    }
+
+    .product_item .cart_btn {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .product_item .color li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .product_item .product_img .btn_list {
+        right: 10px;
+    }
+
+    .product_item:hover .product_img .btn_list {
+        top: 10px;
+    }
+
+    .product_item .color {
+        max-width: 95px;
+    }
+
+    .flash_sell .simply-countdown {
+        margin-top: 10px;
+    }
+
+    .large_banner_text h3 {
+        font-size: 26px;
+    }
+
+    .large_banner {
+        padding: 70px 0px;
+    }
+
+    .pws_tabs_container ul.pws_tabs_controll {
+        justify-content: start;
+        position: initial;
+        margin-bottom: 20px;
+    }
+
+    .bundle_product {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .bundle_product_banner {
+        height: auto;
+        margin-bottom: 45px;
+    }
+
+    .bundle_product_banner .text {
+        padding: 35px;
+    }
+
+    .bundle_product .product_item .product_img {
+        height: auto;
+    }
+
+    .special_product_banner .text h3 {
+        font-size: 24px;
+    }
+
+    .brand .brand_marquee ul li {
+        width: 110px;
+    }
+
+    .multi_product_item .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .multi_product_item .text {
+        width: 62%;
+    }
+
+    .multi_product h3 {
+        font-size: 22px;
+    }
+
+    .footer_info {
+        padding: 15px 15px 30px 15px;
+    }
+
+    .footer_info_item {
+        margin-top: 10px;
+    }
+
+    .footer_link {
+        margin-top: 50px;
+    }
+
+    .footer_link h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer_copyright {
+        margin-top: 100px !important;
+    }
+
+    .footer_copyright p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .progress-wrap {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .large_banner_img {
+        display: none;
+    }
+
+    .brand .brand_marquee ul li a {
+        padding: 10px;
+    }
+
+    .special_product_text {
+        width: 60%;
+    }
+
+    .blog_img {
+        height: auto;
+    }
+
+    /*===========================
+        HOME PAGE 01 END
+    ===========================*/
+
+
+    /*===========================
+        HOME FASHION 02 START
+    ===========================*/
+    .banner_2 {
+        margin-top: 72px;
+    }
+
+    .banner_slider_2 {
+        margin: 12px 12px 0px 12px;
+        height: 350px;
+    }
+
+    .banner_slider_2_text {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .banner_slider_2_text h1 {
+        font-size: 28px;
+    }
+
+    .banner_2 .slick-dots {
+        bottom: 20px;
+    }
+
+    .banner_2_add {
+        padding: 30px;
+        height: 350px;
+    }
+
+    .banner_2_add .text h2 {
+        font-size: 20px;
+    }
+
+    .features_item .icon {
+        width: 70px;
+        height: 70px;
+        left: -35px;
+    }
+
+    .features_item {
+        margin-left: 35px;
+    }
+
+    .features_item .text {
+        padding: 10px 10px 10px 35px;
+    }
+
+    .flash_sell_2 .simply-amount {
+        font-size: 16px;
+    }
+
+    .flash_sell_2 .simply-section {
+        padding: 5px 10px;
+    }
+
+    .flash_sell_2 .simply-countdown {
+        margin-right: auto;
+    }
+
+    .section_heading_2 h3 span::after {
+        width: 70px;
+        bottom: -18px;
+    }
+
+    .product_item_2 {
+        padding: 0;
+    }
+
+    .special_product_2 .section_heading_2 h3 span::after {
+        width: 90px;
+    }
+
+    .special_product_2 .special_product_banner {
+        height: auto;
+    }
+
+    .special_product_2 .special_product_banner .text {
+        padding: 35px;
+    }
+
+    .special_product_img {
+        width: 115px;
+        height: 105px;
+        margin-right: 10px;
+    }
+
+    .special_product_2 .special_product_text {
+        width: 58%;
+    }
+
+    .trending_product_2 .section_heading_2 h3 span::after {
+        width: 110px;
+    }
+
+    .best_selling_product_item {
+        height: auto;
+    }
+
+    .best_selling_product_item_large {
+        height: 240px;
+    }
+
+    .best_selling_product_item_large .text {
+        width: 60%;
+    }
+
+    .best_selling_product_item_large .text .title {
+        font-size: 20px;
+    }
+
+    .best_selling_product_item_large .text p {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .best_selling_product_2 .section_heading_2 h3 span::after,
+    .new_arrival_2 .section_heading_2 h3 span::after {
+        width: 70px;
+    }
+
+    .favourite_product_2 .bundle_product_banner {
+        height: auto;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text {
+        padding: 25px;
+    }
+
+    .favourite_product_2 .bundle_product_banner .text h4 {
+        font-size: 28px;
+    }
+
+    .favourite_product_2 .section_heading_2 h3 span::after {
+        width: 100px;
+    }
+
+    .product_item_2 .product_img .discount_list {
+        left: 10px;
+    }
+
+    .favourite_product_2 .product_item_2 .product_img {
+        height: auto;
+    }
+
+    .brand_2 ul li {
+        width: 31%;
+        max-height: 55px;
+    }
+
+    .brand_2 ul li a {
+        padding: 12px;
+    }
+
+    .brand_2 .section_heading_2 h3 span::after {
+        width: 90px;
+    }
+
+    .blog_2 .blog_img {
+        height: auto;
+    }
+
+    .subscription_2_text {
+        padding: 100px 15px 58px 15px;
+    }
+
+    .subscription_2_text h2,
+    .subscription_2_text h2 span {
+        font-size: 20px;
+    }
+
+    .footer_2 .footer_copyright {
+        margin-top: 75px !important;
+    }
+
+    .brand_2 ul {
+        gap: 10px;
+    }
+
+    .special_product_2 .section_heading h3::after {
+        display: none;
+    }
+
+    .footer_2 .footer_2_logo_area {
+        padding-right: 0;
+    }
+
+    .category_2 .category_item .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /*===========================
+        HOME FASHION 02 END
+    ===========================*/
+
+
+    /*===========================
+        HOME GROCERY START
+    ===========================*/
+    .grocery_banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+    }
+
+    .grocery_banner .grocery_banner_text h1 {
+        font-size: 32px;
+    }
+
+    .home_grocery .slider_padding {
+        padding: 0;
+    }
+
+    .home_grocery .prevArrow.slick-arrow {
+        left: 0;
+    }
+
+    .home_grocery .slick-arrow.nextArrow {
+        right: 0;
+    }
+
+    .home_grocery .category_item {
+        padding: 30px 10px;
+    }
+
+    .home_grocery .add_banner_item_text {
+        padding: 30px;
+        width: 83%;
+    }
+
+    .home_grocery .add_banner_item_text h2 {
+        font-size: 30px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll {
+        gap: 10px 25px;
+    }
+
+    .home_grocery .pws_tabs_container ul.pws_tabs_controll li a::after {
+        right: -15px;
+    }
+
+    .grocery_product_img {
+        height: auto;
+    }
+
+    .grocery_product_text p {
+        font-size: 14px;
+    }
+
+    .grocery_product_text {
+        padding: 0px 10px 15px 10px;
+    }
+
+    .grocery_countdown_text {
+        padding-right: 0;
+    }
+
+    .grocery_countdown_text .simply-countdown .simply-amount {
+
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 26px;
+    }
+
+    .grocery_best_sell .slick-arrow.nextArrow,
+    .grocery_best_sell .prevArrow.slick-arrow {
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+
+    .grocery_brand .brand_marquee ul {
+        gap: 20px !important;
+    }
+
+    .home_grocery .special_product_banner {
+        height: auto;
+    }
+
+    .farming_text p {
+        max-width: 100%;
+    }
+
+    .farming::after {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+    }
+
+    .farming_text {
+        padding-bottom: 12px;
+    }
+
+    .farming_img {
+        height: auto;
+    }
+
+    .download_img {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .download_text ul li a {
+        padding: 10px 20px;
+    }
+
+    .download_text {
+        margin-bottom: -10px;
+    }
+
+    .testimonial_item {
+        padding: 25px;
+    }
+
+    .blog_grocery .blog_img {
+        height: auto;
+    }
+
+    .footer_grocery .footer_info {
+        padding: 15px 15px 25px 15px;
+    }
+
+    .footer_grocery .footer_info_item .icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    /*===========================
+        HOME GROCERY END
+    ===========================*/
+
+
+    /*===========================
+        HOME BEAUTY START
+    ===========================*/
+    .home_beauty .main_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        line-height: 60px;
+    }
+
+    .home_beauty .main_menu .grocery_logo_area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .beauty_banner_text {
+        padding: 0px 12px;
+        margin-bottom: 50px;
+        margin-top: 215px;
+    }
+
+    .beauty_banner_text h1 {
+        font-size: 36px;
+    }
+
+    .beauty_banner_text h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .beauty_banner_text p {
+        max-width: 100%;
+    }
+
+    .beauty_banner_text ul li {
+        border-right: 0;
+        width: 100%;
+    }
+
+    .beauty_banner_text ul li b {
+        width: auto;
+    }
+
+    .beauty_banner_text ul {
+        gap: 20px;
+    }
+
+    .beauty_banner_img .img {
+        height: auto;
+        width: 305px;
+    }
+
+    .beauty_banner_img::before,
+    .beauty_banner_img::after {
+        width: 350px;
+        height: 350px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .beauty_banner_img::after {
+        bottom: -25px;
+    }
+
+    .beauty_banner_slider_item {
+        height: auto;
+    }
+
+    .beauty_featured_products_banner {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .section_heading_beauty h5 {
+        font-size: 18px;
+    }
+
+    .section_heading_beauty h3 {
+        font-size: 24px;
+    }
+
+    .beauty_featured_products .beauty_product_item .img {
+        height: auto;
+    }
+
+    .beauty_product_item .img {
+        height: auto;
+    }
+
+    .beauty_product_item .text .rating span {
+        display: none;
+    }
+
+    .beauty_category .beauty_category_slider {
+        padding: 0;
+    }
+
+    .beauty_category_item .img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .beauty_product_item .text .price {
+        font-size: 16px;
+    }
+
+    .beauty_add_large .text {
+        padding: 30px;
+        max-width: 80%;
+    }
+
+    .beauty_add_large .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_add_large {
+        height: 300px;
+    }
+
+    .beauty_add_large .text h4 {
+        font-size: 18px;
+    }
+
+    .beauty_add_video {
+        height: 360px;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a {
+        padding: 5px 5px;
+        border: none;
+    }
+
+    .beauty_trending_product .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+        color: var(--colorOlive);
+        background: none;
+    }
+
+    .beauty_product_item .img .discount_list li {
+        padding: 2px 7px;
+        font-size: 12px;
+    }
+
+    .beauty_features_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        padding: 25px 0px 0px 0px;
+        border: none;
+    }
+
+    .beauty_features_item .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .beauty_features_item .text h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .beauty_features_item .text p {
+        text-align: left;
+    }
+
+    .beauty_features {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .beauty_countdown_banner .text {
+        padding: 50px 25px;
+    }
+
+    .beauty_countdown_banner,
+    .beauty_countdown_area {
+        height: auto;
+    }
+
+    .beauty_countdown_banner .text h2,
+    .beauty_countdown_area .text h2 {
+        font-size: 26px;
+    }
+
+    .beauty_countdown_area .text {
+        padding: 50px 25px;
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text p {
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .simply-amount {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 26px;
+    }
+
+    .beauty_instagran_photo_item {
+        height: 200px;
+    }
+
+    .beauty_footer .footer_copyright {
+        margin-top: 75px !important;
+    }
+
+    .beauty_add_video_text h2 {
+        font-size: 26px;
+    }
+
+    /*===========================
+        HOME BEAUTY END
+    ===========================*/
+
+
+    /*===========================
+        ABOUT US PAGE START
+    ===========================*/
+    .page_banner_overlay {
+        padding: 120px 0px 52px 0px;
+    }
+
+    .page_banner_text h1 {
+        font-size: 28px;
+    }
+
+    .page_banner_text ul li a {
+        font-size: 14px;
+    }
+
+    .about_us_img .img {
+        height: auto;
+    }
+
+    .about_us_img p {
+        position: initial;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .about_us_img h3 {
+        right: 0;
+        width: 130px;
+        height: 130px;
+        font-size: 36px;
+    }
+
+    .about_us_img h3 span {
+        font-size: 14px;
+    }
+
+    .about_us_text h2 {
+        font-size: 24px;
+    }
+
+    .about_choose_img {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .counter_area {
+        padding: 0;
+    }
+
+    .about_video_area {
+        height: 250px;
+    }
+
+    .counter_area ul li {
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding: 25px 0px;
+    }
+
+    .counter_area ul li:nth-child(1),
+    .counter_area ul li:nth-child(2) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .counter_area ul li:nth-child(2) {
+        border-right: 0;
+    }
+
+    .about_choose_text .section_heading_2 h3 span::after {
+        width: 65px;
+    }
+
+    /*===========================
+        ABOUT US PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG PAGE START
+    ===========================*/
+    .popular_blog_text {
+        width: 65%;
+    }
+
+    .blog_seidebar_add {
+        height: auto;
+    }
+
+    .blog_details_right {
+        margin-top: 50px;
+    }
+
+    /*===========================
+        BLOG PAGE END
+    ===========================*/
+
+
+    /*===========================
+        BLOG DETAILS START
+    ===========================*/
+    .blog_details_img_1 {
+        height: auto;
+    }
+
+    .blog_details_left h1,
+    .blog_details_left h2,
+    .blog_details_left h3,
+    .blog_details_left h4,
+    .blog_details_left h5,
+    .blog_details_left h6 {
+        font-size: 32px !important;
+    }
+
+    .blog_details_left ul li::after,
+    .blog_details_left ol li::after {
+        top: 6px;
+    }
+
+    .blog_details_review {
+        padding: 30px;
+    }
+
+    .blog_details_review p {
+        font-size: 18px;
+    }
+
+    .blog_details_center_img {
+        height: auto;
+    }
+
+    .blog_shear_area_left h5,
+    .blog_shear_area_right h5 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .blog_shear_area_left {
+        margin-bottom: 25px;
+    }
+
+    .blog_details_comment h2,
+    .blog_details_comment_input h2 {
+        font-size: 26px;
+    }
+
+    .blog_comment_text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .blog_details_comment_input {
+        padding: 30px;
+    }
+
+    /*===========================
+        BLOG DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        CART PAGE START
+    ===========================*/
+    .cart_vendor_name {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cart_page_summary {
+        padding: 25px;
+        margin-top: 25px;
+    }
+
+    .cart_page_summary ul li .text {
+        width: 72%;
+    }
+
+    .cart_summary_btn .common_btn {
+        width: auto;
+    }
+
+    .cart_table_area .cart_page_details {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CART PAGE END
+    ===========================*/
+    .checkout_payment {
+        padding: 25px;
+    }
+
+    .compare_list_area table tr td {
+        min-width: 230px;
+    }
+
+    /*===========================
+        CONTACT US START
+    ===========================*/
+    .contact_info {
+        padding: 35px 35px 35px 70px;
+    }
+
+    .contact_img {
+        margin-right: 0;
+        height: auto;
+    }
+
+    .contact_form {
+
+        padding: 25px;
+    }
+
+    .contact_form h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .contact_map {
+        height: 300px;
+    }
+
+    /*===========================
+        CONTACT US END
+    ===========================*/
+
+
+    /*===========================
+        ERROR PAGE START
+    ===========================*/
+    .error_text h2 {
+        font-size: 140px;
+    }
+
+    .error_text h4 {
+        font-size: 36px;
+    }
+
+    .error_text p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        ERROR PAGE END
+    ===========================*/
+
+    .faq_img {
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .faq_page .faq_title {
+        font-size: 28px;
+    }
+
+    /*===========================
+        SIGN UP START
+    ===========================*/
+    .sign_in_form {
+        padding: 30px;
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .sign_in_form h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .sign_in_form ul li {
+        width: 48%;
+    }
+
+    .sign_in_form ul {
+        gap: 10px;
+    }
+
+    /*===========================
+        SIGN UP END
+    ===========================*/
+
+    .payment_success_text .img {
+        width: auto;
+        height: auto;
+    }
+
+    .payment_success_text h3 {
+        font-size: 28px;
+    }
+
+    /*===========================
+        SHOP PAGE START
+    ===========================*/
+    .shop_filter_area {
+        display: none;
+    }
+
+    .shop_filter_area.show {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .product_page_top_button p {
+        display: none;
+    }
+
+    .product_page_sorting .nice-select {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 130px;
+    }
+
+    .product_page_sorting .nice-select:after {
+        right: 10px;
+    }
+
+    .product_page_sorting .select_js.show {
+        width: 85px;
+    }
+
+    .product_page_sorting .nice-select .current {
+        font-size: 12px;
+    }
+
+    .product_page_sorting .nice-select .option {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .product_list_item .short_description {
+        display: none;
+    }
+
+    .product_list_item .common_btn {
+        padding: 12px 15px;
+        font-size: 13px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .product_list_item .product_text {
+        padding: 10px 15px 8px 15px;
+    }
+
+    .product_list_item .title {
+        -webkit-line-clamp: 2;
+    }
+
+    .sidebar_related_product .text {
+        width: 80%;
+    }
+
+    /*===========================
+        SHOP PAGE END
+    ===========================*/
+
+
+    /*===========================
+        SHOP DETAILS START
+    ===========================*/
+    .details_slider_thumb_item {
+        height: auto;
+    }
+
+    .details_slider_nav_item {
+        width: 100px;
+        height: auto;
+        margin: 5px 12px 0px 12px;
+    }
+
+    .shop_details_text {
+        padding: 25px 0px 0px 0px;
+    }
+
+    .shop_details_text .details_title {
+        font-size: 28px;
+    }
+
+    .shop_details_text .price {
+        font-size: 24px;
+    }
+
+    .shop_details_text .details_btn_area {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .details_list_btn li a {
+        font-size: 14px;
+    }
+
+    .shop_details_des_area {
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .shop_details_sidebar {
+        margin-top: 25px;
+    }
+
+    .related_products .section_heading_2 h3 span::after {
+        width: 95px;
+    }
+
+    .shop_details_vendor_logo_area h3 {
+        width: 100%;
+    }
+
+    .shop_details_vendor_rating li {
+        font-size: 18px;
+        padding-right: 13px;
+        margin-right: 13px;
+    }
+
+    .single_review .text {
+        width: 100% !important;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .single_review .text ul li {
+        width: 55px;
+        height: 55px;
+    }
+
+    /*===========================
+        SHOP DETAILS END
+    ===========================*/
+
+
+    /*===========================
+        TRACK ORDER START
+    ===========================*/
+    .tack_order_form {
+        padding: 30px;
+    }
+
+    .track_order_map li {
+        width: 100%;
+    }
+
+    .track_order_map li::before {
+        display: none;
+    }
+
+    .tracking_product_info {
+        padding: 30px;
+    }
+
+    .tracking_product_info .icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .tracking_product_info .icon svg {
+        width: 42px;
+    }
+
+    .tracking_product_info h3 {
+        font-size: 26px;
+    }
+
+    .tracking_product_list {
+        padding: 30px;
+    }
+
+    .tracking_product_info p {
+        max-width: 100%;
+    }
+
+    /*===========================
+        TRACK ORDER END
+    ===========================*/
+
+
+    /*===========================
+        VENDOR DETAILS START
+    ===========================*/
+    .vendor_details_img {
+        height: auto;
+    }
+
+    .vendor_details_info {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .vendor_details_contact {
+        padding: 0px 20px;
+    }
+
+    .vendor_details_info h4 {
+        font-size: 22px;
+    }
+
+    .vendor_details_message {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .vendor_details_info .rating {
+        margin-bottom: 0;
+    }
+
+    .vendor_details .product_page_sorting {
+        justify-content: space-between;
+    }
+
+    /*===========================
+        VENDOR DETAILS END
+    ===========================*/
+
+    .become_vendor_form {
+        padding: 25px;
+        margin-top: 25px;
+    }
+
+    .become_vendor_form h3 {
+        font-size: 22px;
+    }
+
+    .single_vendor .img {
+        height: auto;
+    }
+
+    .single_vendor .text {
+        padding: 45px 10px 0px 10px;
+    }
+
+    .header_2 {
+        z-index: 999;
+    }
+
+    /*===========================
+        DASHBOARD START
+    ===========================*/
+    .dashboard_sidebar_area {
+        top: 0;
+    }
+
+    .dashboard_sidebar {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .dashboard_content {
+        padding: 25px;
+    }
+
+    .dashboard_overview_item h3 {
+        font-size: 26px;
+    }
+
+    .dashboard_overview_item .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        margin-right: 20px;
+    }
+
+    .dashboard_order_table table tr th,
+    .dashboard_order_table table tr td {
+        min-width: 140px;
+        padding: 15px 15px;
+    }
+
+    .dashboard_recent_review {
+        margin-top: 25px;
+    }
+
+    .dashboard_recent_review .single_review .text h5 span {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .dashboard_return_request {
+        padding: 20px;
+    }
+
+    .return_product_item .img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .return_product_item {
+        gap: 10px;
+    }
+
+    .return_product_item .text {
+        width: 61%;
+    }
+
+    .return_product_item .text .return_p_title {
+        font-size: 14px;
+    }
+
+    .return_request_number a {
+        font-size: 14px;
+    }
+
+    .dashboard_content .dashboard_title {
+        font-size: 20px;
+    }
+
+    .dashboard_invoice_logo_area .invoice_logo {
+        margin-bottom: 25px;
+    }
+
+    .invoice_table table tr th,
+    .invoice_table table tr td {
+        padding: 15px;
+    }
+
+    .rating_modal .modal-body {
+        padding: 20px;
+    }
+
+    .dashboard_invoice_header .text {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    .dashboard_invoice_footer a {
+        position: initial;
+        margin-top: 20px;
+    }
+
+    .dashboard_invoice_footer {
+        padding: 20px;
+    }
+
+    .dashboard_invoice_footer p {
+        width: 100%;
+    }
+
+    /*===========================
+        DASHBOARD END
+    ===========================*/
+}
+
+@media (max-width: 1199.98px) {
+    .phone_banner_content {
+        padding: 95px 0 50px 38px;
+        max-width: 360px;
+    }
+
+    .phone_banner_content h1 {
+        font-size: 42px;
+    }
+
+    .phone_banner_phone_back {
+        left: 180px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .phone_banner_phone_front {
+        width: 310px;
+        height: 310px;
+        right: 30px;
+    }
+
+    .phone_banner_side {
+        padding: 40px 32px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .phone_banner_main,
+    .phone_banner_side {
+        min-height: 420px;
+    }
+
+    .phone_banner_content {
+        padding: 70px 24px 40px;
+        max-width: 320px;
+    }
+
+    .phone_banner_content h1 {
+        font-size: 36px;
+    }
+
+    .phone_banner_phone_back {
+        left: 170px;
+        width: 280px;
+        height: 280px;
+        top: 10px;
+    }
+
+    .phone_banner_phone_front {
+        width: 265px;
+        height: 265px;
+        right: 10px;
+        top: 110px;
+    }
+}
+    @media (max-width: 767.98px) {
+    .home_phone_banner .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .phone_banner_main,
+    .phone_banner_side {
+        min-height: 330px;
+        border-radius: 16px;
+    }
+
+    .phone_banner_main::after {
+        background: linear-gradient(180deg, rgba(237, 245, 255, 0.92) 0%, rgba(237, 245, 255, 0.55) 44%, rgba(237, 245, 255, 0.12) 100%);
+    }
+
+    .phone_banner_content {
+        max-width: 100%;
+        padding: 34px 20px 0;
+    }
+
+.phone_banner_content h4 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .phone_banner_content h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .phone_banner_phone_back {
+        width: 210px;
+        height: 210px;
+        left: 110px;
+        top: 92px;
+    }
+
+    .phone_banner_phone_front {
+        width: 190px;
+        height: 190px;
+        right: -10px;
+        top: 130px;
+    }
+
+    .phone_banner_dots {
+        bottom: 20px;
+    }
+
+    .phone_banner_side {
+        padding: 30px 22px;
+    }
+
+    .phone_banner_side_text h5 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 6px 16px;
+        margin-bottom: 14px;
+    }
+
+    .phone_banner_side_text h3 {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .phone_banner_side_visual {
+        height: 120px;
+    }
+
+    .side_phone_left {
+        width: 118px;
+        height: 118px;
+    }
+
+    .side_phone_right {
+        width: 132px;
+        height: 132px;
+    }
+}

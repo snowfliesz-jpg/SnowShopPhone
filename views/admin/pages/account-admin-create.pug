@@ -1,0 +1,46 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+include ../mixins/form-group.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="accountAdminCreateForm")
+        .row
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="fullName") Họ tên *
+              input.form-control(id="fullName" type="text" name="fullName")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="email") Email *
+              input.form-control(id="email" type="email" name="email")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="password") Mật khẩu *
+              input.form-control(id="password" type="text" name="password")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(value="initial") Khởi tạo
+                option(value="active") Hoạt động
+                option(value="inactive") Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              +form-group-file(
+                "Ảnh đại diện",
+                "avatar",
+                "avatar"
+              )
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label Nhóm quyền
+              div(class="checkbox-list" checkbox-list="roles")
+                +checkbox-list(roleList)
+        button.btn.btn-primary(type="submit") Tạo mới
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/account-admin/list`) Hủy

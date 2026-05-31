@@ -1,0 +1,194 @@
+.startbar.d-print-none
+  .brand
+    a.logo(href=`/${pathAdmin}/dashboard`)
+      span
+        img.logo-sm(
+          alt="logo-small"
+          src="/admin/assets/images/logo-sm.png"
+        )
+      span
+        img.logo-lg.logo-light(
+          alt="logo-large"
+          src="/admin/assets/images/logo-light.png"
+        )
+        img.logo-lg.logo-dark(
+          alt="logo-large"
+          src="/admin/assets/images/logo-dark.png"
+        )
+  .startbar-menu
+    #startbarCollapse.startbar-collapse(data-simplebar="")
+      .d-flex.align-items-start.flex-column.w-100
+        ul.navbar-nav.mb-auto.w-100
+          if (permissions.includes("dashboard"))
+            li.nav-item
+              a.nav-link(
+                aria-controls="sidebarDashboard"
+                aria-expanded="false"
+                role="button"
+                data-bs-toggle="collapse"
+                href="#sidebarDashboard"
+              )
+                i.iconoir-home-simple.menu-icon
+                span Tong quan
+              #sidebarDashboard.collapse
+                ul.nav.flex-column
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/dashboard`) Tong quan KPI
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/dashboard/revenue-by-time`) Doanh thu theo thoi gian
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/dashboard/order-statistic`) Thong ke don hang
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/dashboard/top-selling-products`) San pham ban chay
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/dashboard/customer-statistic`) Thong ke khach hang
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarProduct"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarProduct"
+            )
+              i.iconoir-shop.menu-icon
+              span San pham
+            #sidebarProduct.collapse
+              ul.nav.flex-column
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/product/create`) Tao san pham
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/product/list`) Danh sach san pham
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/product/category`) Danh muc san pham
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/product/attribute`) Thuoc tinh san pham
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarArticle"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarArticle"
+            )
+              i.iconoir-journal-page.menu-icon
+              span Bai viet
+            #sidebarArticle.collapse
+              ul.nav.flex-column
+                if (permissions.includes("article-create"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/article/create`) Tao bai viet
+                if (permissions.includes("article-list"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/article/list`) Danh sach bai viet
+                if (permissions.includes("article-category"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/article/category`) Danh muc bai viet
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarRole"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarRole"
+            )
+              i.iconoir-user-badge-check.menu-icon
+              span Nhom quyen
+            #sidebarRole.collapse
+              ul.nav.flex-column
+                if (permissions.includes("role-create"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/role/create`) Tao nhom quyen
+                if (permissions.includes("role-list"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/role/list`) Danh sach nhom quyen
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarAccountAdmin"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarAccountAdmin"
+            )
+              i.iconoir-user-crown.menu-icon
+              span Tai khoan quan tri
+            #sidebarAccountAdmin.collapse
+              ul.nav.flex-column
+                if (permissions.includes("account-admin-create"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/account-admin/create`) Tao tai khoan
+                if (permissions.includes("account-admin-list"))
+                  li.nav-item
+                    a.nav-link(href=`/${pathAdmin}/account-admin/list`) Danh sach tai khoan
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarAccountUser"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarAccountUser"
+            )
+              i.iconoir-user-crown.menu-icon
+              span Tai khoan nguoi dung
+            #sidebarAccountUser.collapse
+              ul.nav.flex-column
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/account-user/list`) Danh sach tai khoan
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarCoupon"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarCoupon"
+            )
+              i.iconoir-percentage-circle.menu-icon
+              span Ma giam gia
+            #sidebarCoupon.collapse
+              ul.nav.flex-column
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/coupon/create`) Tao ma giam gia
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/coupon/list`) Danh sach ma giam gia
+          li.nav-item
+            a.nav-link(href=`/${pathAdmin}/order/list`)
+              i.iconoir-bag.menu-icon
+              span Quan ly don hang
+          li.nav-item
+            a.nav-link(href=`/${pathAdmin}/review/list`)
+              i.iconoir-star.menu-icon
+              span Quan ly danh gia
+          if (permissions.includes("file-manager"))
+            li.nav-item
+              a.nav-link(href=`/${pathAdmin}/file-manager/iframe`)
+                i.iconoir-page-star.menu-icon
+                span Quan ly file
+          li.nav-item
+            a.nav-link(
+              aria-controls="sidebarSetting"
+              aria-expanded="false"
+              role="button"
+              data-bs-toggle="collapse"
+              href="#sidebarSetting"
+            )
+              i.iconoir-settings.menu-icon
+              span Cai dat
+            #sidebarSetting.collapse
+              ul.nav.flex-column
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/setting/api-shipping`) API hang van chuyen
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/setting/api-payment`) API cong thanh toan
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/setting/api-login-social`) API dang nhap MXH
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/setting/api-app-password`) API mat khau ung dung
+                li.nav-item
+                  a.nav-link(href=`/${pathAdmin}/setting/general`) Cai dat chung
+                li.nav-item
+                  a.nav-link(
+                    href="javascript:;"
+                    button-api
+                    data-method="PATCH"
+                    data-api=`/${pathAdmin}/setting/remove-cache`
+                  ) Xoa bo nho dem
+.startbar-overlay.d-print-none

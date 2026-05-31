@@ -1,0 +1,19 @@
+mixin box-option(name, options = [])
+  div(class="box-option" box-option=name)
+    div(class="option-list")
+      if (options.length > 0)
+        each option in options
+          div(class="option-item")
+            span(class="btn btn-secondary option-move")
+              <i class="fa-solid fa-up-down-left-right"></i>
+            input(type="text" class="form-control option-label" placeholder="Nhãn" value=option.label)
+            input(type="text" class="form-control option-value" placeholder="Giá trị" value=option.value)
+            span(class="btn btn-danger option-remove") Xóa
+      else
+        div(class="option-item")
+          span(class="btn btn-secondary option-move")
+            <i class="fa-solid fa-up-down-left-right"></i>
+          input(type="text" class="form-control option-label" placeholder="Nhãn")
+          input(type="text" class="form-control option-value" placeholder="Giá trị")
+          span(class="btn btn-danger option-remove") Xóa
+    span(class="btn btn-outline-info mt-2 option-create") Thêm lựa chọn

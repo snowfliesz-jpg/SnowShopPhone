@@ -1,0 +1,93 @@
+extends ../layouts/default.pug
+include ../mixins/pagination.pug
+include ../mixins/form-search.pug
+
+block main
+  .row
+    .col-12
+      .card
+        .card-header
+          .row.align-items-center
+            .col
+              h4.card-title #{pageTitle}
+            .col-auto
+              a.btn.btn-primary(href=`/${pathAdmin}/product/create`)
+                i.fa-solid.fa-plus.me-1
+                | Tao san pham
+        .card-body.pt-0
+          .row
+            .col-sm-6
+              +form-search()
+            .col-sm-3
+              a.btn.w-100.btn-info(href=`/${pathAdmin}/product/export/csv`)
+                i.fa-solid.fa-download.me-1
+                | Xuat Excel
+            .col-lg-4
+              form.input-group.mb-3(
+                id="formImportExcel"
+                data-api=`/${pathAdmin}/product/import/csv`
+              )
+                input.form-control(
+                  type="file"
+                  name="file"
+                  id="file"
+                  accept=".csv"
+                )
+                button.btn.btn-secondary Nhung Excel
+          .table-responsive
+            table.table.table-striped.mb-0
+              thead.table-light
+                tr
+                  th STT
+                  th Avatar
+                  th Ten san pham
+                  th Gia cu (d)
+                  th Gia moi (d)
+                  th Con lai
+                  th So bien the
+                  th Vi tri
+                  th Trang thai
+                  th Luot xem
+                  th.text-end Hanh dong
+              tbody
+                each item, index in recordList
+                  tr
+                    td #{pagination.skip + index + 1}
+                    td
+                      if(item.images && item.images.length > 0)
+                        img(
+                          src=`${domainCDN}${item.images[0]}`
+                          class="rounded thumb-md me-1 d-inline"
+                        )
+                    td #{item.name}
+                    td
+                      if(item.priceOld)
+                        | #{item.priceOld.toLocaleString("vi-VN")}
+                    td
+                      if(item.priceNew)
+                        | #{item.priceNew.toLocaleString("vi-VN")}
+                    td #{item.stock}
+                    td #{item.variants.length}
+                    td #{item.position}
+                    td
+                      if (item.status == "draft")
+                        span.badge.bg-dark Ban nhap
+                      else if (item.status == "active")
+                        span.badge.bg-success Hoat dong
+                      else if (item.status == "inactive")
+                        span.badge.bg-danger Tam dung
+                    td #{item.view}
+                    td.text-end
+                      a.btn.btn-sm.btn-warning.text-white.ms-1(
+                        href=`/${pathAdmin}/product/edit/${item.id}`
+                      ) Sua
+                      a.btn.btn-sm.btn-warning.text-white.ms-1(
+                        href=`/${pathAdmin}/product/edit-seo/${item.id}`
+                      ) Sua SEO
+                      a.btn.btn-sm.btn-danger.text-white.ms-1(
+                        href="javascript:;"
+                        button-api
+                        data-method="PATCH"
+                        data-api=`/${pathAdmin}/product/delete/${item.id}`
+                      ) Xoa
+          +pagination()

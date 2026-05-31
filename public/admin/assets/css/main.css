@@ -1,0 +1,260 @@
+.just-validate-error-label {
+  width: 100%;
+}
+
+.preview-file {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.preview-file img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* checkbox-list */
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  border-radius: 6.4px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkbox-item input {
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox-item label {
+  font-size: 13px;
+  cursor: pointer;
+}
+/* End checkbox-list */
+
+/* form-multi-file */
+.form-multi-file .inner-list-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-multi-file .inner-list-image .inner-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: move;
+}
+
+.form-multi-file .inner-list-image .inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.form-multi-file .inner-list-image .inner-image .inner-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+/* End form-multi-file */
+
+.checkbox-all, .checkbox-input {
+  width: 16px;
+  height: 16px;
+}
+
+/* option-list */
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-item {
+  display: flex;
+  gap: 10px;
+}
+
+.option-item .option-move {
+  cursor: move;
+}
+
+.option-item input {
+  flex: 1;
+}
+/* End option-list */
+
+.chat-box-right .chat-body {
+  overflow-y: auto;
+}
+
+.chat-files {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chat-files .chat-image {
+  width: 100% !important;
+  object-fit: contain !important;
+}
+
+.chat-files a {
+  width: 110px !important;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: contain !important;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.chat-preview {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 100px;
+  position: absolute;
+  bottom: 68px;
+  width: 100%;
+  background: white;
+}
+
+.preview-item {
+  position: relative;
+  width: 80px;
+}
+
+.preview-item img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 92px;
+}
+
+.preview-item .preview-file-item {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  word-break: break-word;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* tối đa 3 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 84px;
+}
+
+.preview-remove {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-box {
+  position: relative;
+}
+
+.chat-box:hover {
+  background: #eaeaea;
+  border-radius: 8px;
+}
+
+.chat-box .delete-message {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-box:hover .delete-message {
+  display: flex;
+}
+
+.chat-ai-suggest-reply {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 300px;
+  position: absolute;
+  bottom: 68px;
+  width: 100%;
+  background: #e9ffea;
+  border-radius: 6px;
+}
+
+.chat-ai-suggest-reply .inner-content {
+  white-space: break-spaces;
+}
+
+.chat-ai-suggest-reply .inner-close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

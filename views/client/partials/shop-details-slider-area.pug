@@ -1,0 +1,20 @@
+div(class="shop_details_slider_area")
+  .row
+    .col-xl-2.col-lg-3.col-md-3.order-2.order-md-1
+      .row(class="details_slider_nav")
+        each image in productDetail.images
+          .col-12
+            div(class="details_slider_nav_item")
+              img.img-fluid.w-100(
+                alt=productDetail.name
+                src=`${domainCDN}${image}`
+                )
+    .col-xl-10.col-lg-9.col-md-9.order-md-1
+      .row(class="details_slider_thumb")
+        each image in productDetail.images
+          .col-12
+            div(class="details_slider_thumb_item")
+              img.img-fluid.w-100(
+                alt=productDetail.name
+                src=`${domainCDN}${image}`
+                )

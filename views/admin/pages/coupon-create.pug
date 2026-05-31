@@ -1,0 +1,74 @@
+extends ../layouts/default.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="couponCreateForm")
+        .row
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="code") Mã giảm giá *
+              input.form-control(id="code" type="text" name="code" placeholder="Ví dụ: CHAOHE2025")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="name") Tên mã giảm giá *
+              input.form-control(id="name" type="text" name="name" placeholder="Ví dụ: Chào hè 2025")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="typeDiscount") Kiểu giảm giá
+              select.form-select(id="typeDiscount" name="typeDiscount")
+                option(value="percentage") Phần trăm
+                option(value="fixed") Số tiền cố định
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="value") Giá trị giảm
+              input.form-control(id="value" type="number" name="value")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="minOrderValue") Giá trị đơn hàng tối thiểu
+              input.form-control(id="minOrderValue" type="number" name="minOrderValue")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="maxDiscountValue") Số tiền giảm tối đa (Nếu kiểu %)
+              input.form-control(id="maxDiscountValue" type="number" name="maxDiscountValue")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="usageLimit") Số lượng giới hạn
+              input.form-control(id="usageLimit" type="number" name="usageLimit")
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="typeDisplay") Kiểu hiển thị
+              select.form-select(id="typeDisplay" name="typeDisplay")
+                option(value="public") Công khai
+                option(value="private") Riêng tư
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(value="active") Hoạt động
+                option(value="inactive") Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label Thời gian hiệu lực
+              .input-group(date-range)
+                input.form-control(
+                  name="startDate" 
+                  placeholder="Ngày bắt đầu" 
+                  type="text"
+                  )
+                span.input-group-text to
+                input.form-control.rounded-end(
+                  name="endDate"  
+                  placeholder="Ngày kết thúc" 
+                  type="text"
+                  )
+          .col-md-12.col-lg-12
+            .mb-3
+              label.form-label(for="description") Mô tả
+              textarea(id="description" name="description" textarea-mce)
+        button.btn.btn-primary(type="submit") Tạo mới
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/coupon/list`) Hủy

@@ -1,0 +1,13 @@
+mixin checkbox-list(list = [], level = 0, listChecked = [])
+  each item in list
+    - const marginLeft = `${level * 20}px`;
+    div(class="checkbox-item" style=`margin-left: ${marginLeft}`)
+      input(
+        type="checkbox" 
+        id=`checkbox-${item.id}` 
+        value=item.id
+        checked=(listChecked.includes(item.id))
+        )
+      label(for=`checkbox-${item.id}`) #{item.name}
+    if (item.children && item.children.length > 0)
+      +checkbox-list(item.children, level + 1, listChecked)

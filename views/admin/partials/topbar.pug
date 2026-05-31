@@ -1,0 +1,43 @@
+.topbar.d-print-none
+  .container-xxl
+    nav#topbar-custom.topbar-custom.d-flex.justify-content-between
+      ul.topbar-item.list-unstyled.d-inline-flex.align-items-center.mb-0
+        li
+          button#togglemenu.nav-link.mobile-menu-btn.nav-icon
+            i.iconoir-menu-scale
+        li.mx-3.welcome-text
+          h3.mb-0.fw-bold.text-truncate Xin chao, #{accountAdmin.fullName}!
+      ul.topbar-item.list-unstyled.d-inline-flex.align-items-center.mb-0
+        li.dropdown.topbar-item
+          a.nav-link.dropdown-toggle.arrow-none.nav-icon(
+            aria-expanded="false"
+            aria-haspopup="false"
+            role="button"
+            href="#"
+            data-bs-toggle="dropdown"
+          )
+            img.thumb-lg.rounded-circle(
+              alt=""
+              src=`${accountAdmin.isSuperAdmin ? "" : domainCDN}${accountAdmin.avatar}`
+            )
+          .dropdown-menu.dropdown-menu-end.py-0
+            .d-flex.align-items-center.dropdown-item.py-2.bg-secondary-subtle
+              .flex-shrink-0
+                img.thumb-md.rounded-circle(
+                  alt=""
+                  src=`${accountAdmin.isSuperAdmin ? "" : domainCDN}${accountAdmin.avatar}`
+                )
+              .flex-grow-1.ms-2.text-truncate.align-self-center
+                h6.my-0.fw-medium.text-dark.fs-13 #{accountAdmin.fullName}
+            .dropdown-divider.mt-0
+            small.text-muted.px-2.pb-1.d-block Tai khoan
+            a.dropdown-item(href="#")
+              i.las.la-user.fs-18.me-1.align-text-bottom
+              | Thong tin ca nhan
+            a.dropdown-item(href="#")
+              i.las.la-key.fs-18.me-1.align-text-bottom
+              | Doi mat khau
+            .dropdown-divider.mb-0
+            a.dropdown-item.text-danger(href=`/${pathAdmin}/account/logout`)
+              i.las.la-power-off.fs-18.me-1.align-text-bottom
+              | Dang xuat

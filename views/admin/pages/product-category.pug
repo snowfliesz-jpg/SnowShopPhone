@@ -1,0 +1,68 @@
+extends ../layouts/default.pug
+include ../mixins/pagination.pug
+include ../mixins/form-search.pug
+
+block main
+  .row
+    .col-12
+      .card
+        .card-header
+          .row.align-items-center
+            .col
+              h4.card-title #{pageTitle}
+            // end col
+            .col-auto
+              a.btn.btn-primary(
+                href=`/${pathAdmin}/product/category/create`
+                )
+                i.fa-solid.fa-plus.me-1
+                | Tạo danh mục
+                // end col
+            // end col
+          // end row
+        // end card-header
+        .card-body.pt-0
+          .row
+            .col-lg-6
+              +form-search()
+          .table-responsive
+            table.table.table-striped.mb-0
+              thead.table-light
+                tr
+                  th STT
+                  th Avatar
+                  th Tên danh mục
+                  th Danh mục cha
+                  th Trạng thái
+                  th Lượt xem
+                  th.text-end Hành động
+              tbody
+                each item, index in recordList
+                  tr
+                    td #{pagination.skip + index + 1}
+                    td
+                      if(item.avatar)
+                        img(
+                          src=`${domainCDN}${item.avatar}`
+                          class="rounded thumb-md me-1 d-inline"
+                        )
+                    td #{item.name}
+                    td #{item.parentName}
+                    td
+                      if (item.status == "active")
+                        span(class="badge bg-success") Hoạt động
+                      else if (item.status == "inactive")
+                        span(class="badge bg-danger") Tạm dừng
+                    td #{item.view}
+                    td.text-end
+                      a(href=`/${pathAdmin}/product/category/edit/${item.id}`)
+                        i.las.la-pen.text-secondary.font-16
+                      a(
+                        href="javascript:;"
+                        button-api
+                        data-method="PATCH"
+                        data-api=`/${pathAdmin}/product/category/delete/${item.id}`
+                      )
+                        i.las.la-trash-alt.text-secondary.font-16
+          +pagination()
+    // end col

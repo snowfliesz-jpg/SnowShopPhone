@@ -1,0 +1,106 @@
+extends ../layouts/default.pug
+include ../mixins/product-item-2.pug
+include ../mixins/blog-item.pug
+
+block main
+  section.home_phone_banner.mt_25
+    .container-fluid.px-lg-4.px-3
+      .row.g-4
+        .col-xl-8.col-lg-7
+          .phone_banner_main.wow.fadeInLeft
+            .phone_banner_content
+              h4 Thoi Dai Cong Nghe Moi
+              h1
+                | Noi Phong Cach Duoc
+                br
+                | The Hien
+              a.common_btn(href="/product/category")
+                | Mua Ngay
+                i.far.fa-arrow-right
+            .phone_banner_visual
+              img.phone_banner_phone.phone_banner_phone_back(
+                alt="Dien thoai thong minh"
+                src="/client/assets/images/product_23.jpg"
+                )
+              img.phone_banner_phone.phone_banner_phone_front(
+                alt="Dien thoai noi bat"
+                src="/client/assets/images/product_24.webp"
+                )
+            ul.phone_banner_dots
+              li.active
+              li
+              li
+        .col-xl-4.col-lg-5
+          .phone_banner_side.wow.fadeInRight
+            .phone_banner_side_text
+              h5 Chao Ngung Ngay He
+              h3 May mat vo tu
+              a.common_btn(href=(newestProducts.length > 0 ? `/product/detail/${newestProducts[0].slug}` : "/product/category"))
+                | Mua Ngay
+                i.far.fa-arrow-right
+            .phone_banner_side_visual
+              img.side_phone.side_phone_left(
+                alt="Dien thoai sale"
+                src="/client/assets/images/product_22.webp"
+                )
+              img.side_phone.side_phone_right(
+                alt="Dien thoai moi"
+                src="/client/assets/images/product_24.webp"
+                )
+
+  section.mt_100
+    .container
+      .row.align-items-center
+        .col-xl-8
+          .section_heading_2.section_heading
+            h3
+              span San Pham
+              | Dang Giam Gia
+        .col-xl-4.text-xl-end
+          a.common_btn(href="/product/category?onSale=true") Xem tat ca
+      .row.mt_25
+        if saleProducts.length > 0
+          each item in saleProducts
+            .col-xxl-3.col-xl-4.col-md-6.wow.fadeInUp
+              +product-item-2(item)
+        else
+          .col-12
+            p.mb-0 Chua co san pham dang giam gia.
+
+  section.mt_100
+    .container
+      .row.align-items-center
+        .col-xl-8
+          .section_heading_2.section_heading
+            h3
+              span San Pham
+              | Moi Nhat
+        .col-xl-4.text-xl-end
+          a.common_btn(href="/product/category") Xem tat ca
+      .row.mt_25
+        if newestProducts.length > 0
+          each item in newestProducts
+            .col-xxl-3.col-xl-4.col-md-6.wow.fadeInUp
+              +product-item-2(item)
+        else
+          .col-12
+            p.mb-0 Chua co san pham moi.
+
+  section.blog_2.mt_100.mb_100
+    .container
+      .row.align-items-center
+        .col-xl-8
+          .section_heading_2.section_heading
+            h3
+              span Bai Viet
+              | Moi Nhat
+        .col-xl-4.text-xl-end
+          a.common_btn(href=(latestArticles.length > 0 ? `/article/detail/${latestArticles[0].slug}` : "#")) Xem bai viet
+      .row.mt_25
+        if latestArticles.length > 0
+          each item in latestArticles
+            .col-xl-4.col-md-6.wow.fadeInUp
+              +blog-item(item)
+        else
+          .col-12
+            p.mb-0 Chua co bai viet moi.

@@ -1,0 +1,39 @@
+mixin blog-item(item)
+  div(class="blog_item")
+    a(
+      class="blog_img" 
+      href=`/article/detail/${item.slug}`
+      )
+      img.img-fluid.w-100(
+        alt="blog" 
+        src=`${domainCDN}${item.avatar}`
+        )
+    div(class="blog_text")
+      ul.top
+        if (item.authorName)
+          li
+            span
+              img.img-fluid.w-100(
+                alt="user" 
+                src="/client/assets/images/user_icon_black.svg"
+                )
+            | #{item.authorName}
+        if (item.date)
+          li
+            span
+              img.img-fluid.w-100(
+                alt="Message" 
+                src="/client/assets/images/calender.png"
+                )
+            | #{item.date}
+      a.title(href=`/article/detail/${item.slug}`)
+        | #{item.name}
+      ul.bottom
+        li
+          a(href=`/article/detail/${item.slug}`)
+            | Xem thêm
+            i.fas.fa-long-arrow-right
+        li
+          span
+            i.far.fa-comment-dots
+            | 0 Bình luận

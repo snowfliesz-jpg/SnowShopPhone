@@ -1,0 +1,29 @@
+mixin renderCategory(items, level = 0)
+  //- Xác định class cho ul theo level
+  -
+    var ulClass = "";
+    if (level == 0) ulClass = "menu_cat_item";
+    else if (level == 1) ulClass = "menu_cat_droapdown";
+    else ulClass = "sub_category";
+
+  ul(class=ulClass)
+    each item in items
+      if (item.status == "active")
+        li
+          a(href=`/product/category/${item.slug}`)
+            if (level == 0 && item.avatar)
+              span
+                img(
+                  alt="category" 
+                  src=`${domainCDN}${item.avatar}`
+                  )
+            | #{item.name}
+            if (level > 0 && item.children && item.children.length > 0)
+              i.fal.fa-angle-right
+          if (item.children && item.children.length > 0)
+            +renderCategory(item.children, level+1)
+    if(level == 0)
+      li(class="all_category")
+        a(href="#")
+          | Xem Tất Cả
+          i.far.fa-arrow-right

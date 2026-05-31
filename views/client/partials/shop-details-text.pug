@@ -1,0 +1,132 @@
+include ../mixins/stars.pug
+
+div(class="shop_details_text")
+  script.
+    const productVariants = !{JSON.stringify(productDetail.variants)};
+  //- p.category Computers & Tablets
+  h2(class="details_title") #{productDetail.name}
+  .d-flex.flex-wrap.align-items-center
+    if (productDetail.stock > 0)
+      p.stock Còn hàng (#{productDetail.stock})
+    else
+      p(class="out_stock stock") Hết hàng
+    p.rating
+      +stars(productDetail)
+      span (#{productDetail.ratingCount} Đánh giá)
+  h3.price
+    div.price-new #{productDetail.priceNew.toLocaleString("vi-VN")}đ
+    del.price-old #{productDetail.priceOld.toLocaleString("vi-VN")}đ
+  div(class="short_description") !{productDetail.description}
+  each attribute in attributeList
+    div(class="details_single_variant")
+      p(class="variant_title") #{attribute.name}:
+      if (attribute.type == "color")
+        ul(class="details_variant_color")
+          each variant in attribute.variants
+            li(
+              style=`background: ${variant};`
+              attribute-id=attribute.id
+              variant=variant
+              )
+      else if (attribute.type == "text")
+        ul(class="details_variant_size")
+          each variantLabel, index in attribute.variantsLabel
+            li(
+              attribute-id=attribute.id
+              variant=attribute.variants[index]
+            ) #{variantLabel}
+  .d-flex.flex-wrap.align-items-center
+    div(class="details_qty_input")
+      button.minus
+        i.fal.fa-minus
+      input(
+        value=(productDetail.stock > 0 ? 1 : 0)
+        type="text"
+        class="input-quantity"
+        min="1"
+        max=productDetail.stock
+        readonly
+        )
+      button.plus
+        i.fal.fa-plus
+    div(class="details_btn_area")
+      a(
+        href="#" 
+        class="common_btn buy_now"
+        )
+        | Mua Ngay
+        i.fas.fa-long-arrow-right
+      button(
+        class="common_btn"
+        button-add-cart
+        product-id=productDetail.id
+        )
+        | Thêm Vào Giỏ
+        i.fas.fa-long-arrow-right
+  ul(class="details_list_btn")
+    li
+      a(
+        href="javascript:;"
+        button-add-wishlist
+        product-id=productDetail.id
+      )
+        i.fal.fa-heart
+        | Yêu thích
+    li
+      a(
+        href="javascript:;"
+        button-add-compare
+        product-id=productDetail.id
+        )
+        i.fal.fa-exchange
+        | So sánh
+    li
+      a(href="#")
+        i.fal.fa-question-circle
+        | Hỏi đáp
+  ul(class="details_tags_sku")
+    li
+      span SKU:
+      | #{productDetail.sku}
+    li
+      span Danh mục:
+      each category in productDetail.categoryList
+        a(href=`/product/category/${category.slug}` class="badge text-bg-info me-1") #{category.name}
+    li
+      span Nhãn:
+      each tag in productDetail.tags
+        span(class="badge text-bg-warning me-1") #{tag}
+  ul(class="shop_details_shate")
+    li Chia sẽ:
+    li
+      a(
+        button-share
+        href=`https://www.facebook.com/sharer/sharer.php?u=`
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        i.fab.fa-facebook-f(aria-hidden="true")
+    li
+      a(
+        button-share
+        href=`https://twitter.com/intent/tweet?url=`
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        i.fab.fa-twitter(aria-hidden="true")
+    li
+      a(
+        button-share
+        href=`https://www.linkedin.com/shareArticle?url=`
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        i.fab.fa-linkedin-in(aria-hidden="true")
+    li
+      a(
+        button-share
+        href=`https://pinterest.com/pin/create/button/?url=`
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        i.fab.fa-pinterest

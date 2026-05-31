@@ -1,0 +1,56 @@
+extends ../layouts/default.pug
+include ../mixins/checkbox.pug
+include ../mixins/form-group.pug
+
+block main
+  .card
+    .card-header
+      .row.align-items-center
+        .col
+          h4.card-title #{pageTitle}
+    .card-body.pt-0
+      form(id="accountAdminEditForm")
+        .row
+          .col-md-6.col-lg-6.d-none
+            .mb-3
+              label.form-label(for="id") Id *
+              input.form-control(id="id" type="text" name="id" value=accountDetail.id)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="fullName") Họ tên *
+              input.form-control(id="fullName" type="text" name="fullName" value=accountDetail.fullName)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="email") Email *
+              input.form-control(id="email" type="email" name="email" value=accountDetail.email)
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label(for="status") Trạng thái
+              select.form-select(id="status" name="status")
+                option(
+                  value="initial"
+                  selected=(accountDetail.status == "initial")
+                  ) Khởi tạo
+                option(
+                  value="active"
+                  selected=(accountDetail.status == "active")
+                  ) Hoạt động
+                option(
+                  value="inactive"
+                  selected=(accountDetail.status == "inactive")
+                  ) Tạm dừng
+          .col-md-6.col-lg-6
+            .mb-3
+              +form-group-file(
+                "Ảnh đại diện",
+                "avatar",
+                "avatar",
+                accountDetail.avatar
+              )
+          .col-md-6.col-lg-6
+            .mb-3
+              label.form-label Nhóm quyền
+              div(class="checkbox-list" checkbox-list="roles")
+                +checkbox-list(roleList, 0, accountDetail.roles)
+        button.btn.btn-primary(type="submit") Cập nhật
+        a.btn.btn-danger.ms-1(href=`/${pathAdmin}/account-admin/list`) Hủy

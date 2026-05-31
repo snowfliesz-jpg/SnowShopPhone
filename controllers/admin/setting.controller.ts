@@ -1,0 +1,214 @@
+import { Request, Response } from 'express';
+import Setting from '../../models/setting.model';
+import { RequestAccount } from '../../interfaces/request.interface';
+
+export const apiShipping = async (req: Request, res: Response) => {
+  const key = "apiShipping";
+
+  const record = await Setting.findOne({
+    key: key
+  });
+  
+  res.render("admin/pages/setting-api-shipping", {
+    pageTitle: "API hãng vận chuyển",
+    record: record
+  });
+}
+
+export const apiShippingPatch = async (req: RequestAccount, res: Response) => {
+  const { tokenGoShip } = req.body;
+
+  const key = "apiShipping";
+
+  const data = {
+    tokenGoShip: tokenGoShip
+  };
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: data,
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Cập nhật thành công!"
+  })
+}
+
+export const apiPayment = async (req: Request, res: Response) => { 
+  const key = "apiPayment";
+
+  const record = await Setting.findOne({
+    key: key
+  });
+  
+  res.render("admin/pages/setting-api-payment", {
+    pageTitle: "API cổng thanh toán",
+    record: record
+  });
+}
+
+export const apiPaymentPatch = async (req: RequestAccount, res: Response) => {
+  const key = "apiPayment";
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: req.body,
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Cập nhật thành công!"
+  })
+}
+
+export const apiLoginSocial = async (req: Request, res: Response) => { 
+  const key = "apiLoginSocial";
+
+  const record = await Setting.findOne({
+    key: key
+  });
+  
+  res.render("admin/pages/setting-api-login-social", {
+    pageTitle: "API đăng nhập mạng xã hội",
+    record: record
+  });
+}
+
+export const apiLoginSocialPatch = async (req: RequestAccount, res: Response) => {
+  const key = "apiLoginSocial";
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: req.body,
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Cập nhật thành công!"
+  })
+}
+
+export const apiAppPassword = async (req: Request, res: Response) => { 
+  const key = "apiAppPassword";
+
+  const record = await Setting.findOne({
+    key: key
+  });
+  
+  res.render("admin/pages/setting-api-app-password", {
+    pageTitle: "API mật khẩu ứng dụng của Google",
+    record: record
+  });
+}
+
+export const apiAppPasswordPatch = async (req: RequestAccount, res: Response) => {
+  const key = "apiAppPassword";
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: req.body,
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Cập nhật thành công!"
+  })
+}
+
+export const general = async (req: Request, res: Response) => { 
+  const key = "general";
+
+  const record = await Setting.findOne({
+    key: key
+  });
+  
+  res.render("admin/pages/setting-general", {
+    pageTitle: "Cài đặt chung",
+    record: record
+  });
+}
+
+export const generalPatch = async (req: RequestAccount, res: Response) => {
+  const key = "general";
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: req.body,
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Cập nhật thành công!"
+  })
+}
+
+export const removeCachePatch = async (req: RequestAccount, res: Response) => {
+  const key = "assetVersion";
+
+  await Setting.findOneAndUpdate(
+    {
+      key: key
+    },
+    {
+      key: key,
+      data: {
+        assetVersion: Date.now()
+      },
+      updatedBy: req.adminId
+    },
+    {
+      upsert: true, // nếu không tìm thấy bản ghi sẽ tạo bản ghi mới.
+    }
+  );
+  
+  res.json({
+    code: "success",
+    message: "Đã xóa bộ nhớ đệm!"
+  })
+}

@@ -1,0 +1,47 @@
+extends ../layouts/default.pug
+
+block main
+  if permissions.includes('dashboard')
+    .row
+      .col-md-12.col-lg-12
+        .card
+          .card-header
+            .row.align-items-center
+              .col
+                h4.card-title Biểu đồ doanh thu theo giờ
+          .card-body.pt-0
+            canvas#revenueChartHour
+
+    .row
+      .col-md-12.col-lg-12
+        .card
+          .card-header
+            .row.align-items-center
+              .col
+                h4.card-title Biểu đồ doanh thu theo ngày
+          .card-body.pt-0
+            canvas#revenueChartDay
+
+    .row
+      .col-md-12.col-lg-12
+        .card
+          .card-header
+            .row.align-items-center
+              .col
+                h4.card-title Biểu đồ doanh thu theo tháng
+          .card-body.pt-0
+            canvas#revenueChartMonth
+
+block script
+  script(src="https://cdn.jsdelivr.net/npm/chart.js")
+  script.
+    const labelsHour = !{JSON.stringify(labelsHour)};
+    const todayData = !{JSON.stringify(todayData)};
+    const yesterdayData = !{JSON.stringify(yesterdayData)};
+    const labelsDay = !{JSON.stringify(labelsDay)};
+    const thisMonthData = !{JSON.stringify(thisMonthData)};
+    const lastMonthData = !{JSON.stringify(lastMonthData)};
+    const labelsMonth = !{JSON.stringify(labelsMonth)};
+    const thisYearData = !{JSON.stringify(thisYearData)};
+    const lastYearData = !{JSON.stringify(lastYearData)};
+  script(src="/admin/assets/js/my-chart.js")

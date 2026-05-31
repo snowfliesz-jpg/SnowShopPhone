@@ -1,0 +1,57 @@
+extends ../layouts/default.pug
+include ../mixins/form-group.pug
+include ../mixins/checkbox.pug
+
+block main
+  if (permissions.includes("article-create"))
+    .card
+      .card-header
+        .row.align-items-center
+          .col
+            h4.card-title #{pageTitle}
+      .card-body.pt-0
+        form(id="articleCreateForm")
+          .row
+            .col-md-6.col-lg-6
+              .mb-3
+                label.form-label(for="name") Tên bài viết *
+                input.form-control(id="name" type="text" name="name")
+            .col-md-6.col-lg-6
+              .mb-3
+                label.form-label(for="slug") Đường dẫn *
+                .input-group
+                  span.btn.btn-outline-info(
+                    btn-generate-slug="Blog" 
+                    from="name"
+                    to="slug"
+                  ) Tự động
+                  input.form-control(id="slug" type="text" name="slug")
+            .col-md-6.col-lg-6
+              .mb-3
+                label.form-label Danh mục
+                div(class="checkbox-list" checkbox-list="category")
+                  +checkbox-list(categoryList)
+            .col-md-6.col-lg-6
+              .mb-3
+                label.form-label(for="status") Trạng thái
+                select.form-select(id="status" name="status")
+                  option(value="draft") Bản nháp
+                  option(value="published") Xuất bản
+                  option(value="archived") Lưu trữ
+            .col-md-6.col-lg-6
+              .mb-3
+                +form-group-file(
+                  "Ảnh đại diện",
+                  "avatar",
+                  "avatar"
+                )
+            .col-md-12.col-lg-12
+              .mb-3
+                label.form-label(for="description") Mô tả ngắn
+                textarea(id="description" name="description" textarea-mce)
+            .col-md-12.col-lg-12
+              .mb-3
+                label.form-label(for="content") Nội dung chi tiết
+                textarea(id="content" name="content" textarea-mce)
+          button.btn.btn-primary(type="submit") Tạo mới
+          a.btn.btn-danger.ms-1(href=`/${pathAdmin}/article/list`) Hủy

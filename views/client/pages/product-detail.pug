@@ -1,0 +1,62 @@
+extends ../layouts/default.pug
+include ../mixins/page-banner.pug
+include ../mixins/products-slider.pug
+
+block main
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+  +page-banner(
+    productDetail,
+    `/product/detail/${productDetail.slug}`
+  )
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+
+  //
+    ============================
+    SHOP DETAILS START
+    =============================
+  section(class="shop_details mt_100")
+    .container
+      .row
+        .col-xxl-10
+          .row
+            .col-lg-6.col-md-10.wow.fadeInLeft
+              include ../partials/shop-details-slider-area.pug
+            .col-lg-6.wow.fadeInUp
+              include ../partials/shop-details-text.pug
+          include ../partials/bought-together-products.pug
+          .row.wow.fadeInUp(class="mt_90")
+            .col-12
+              include ../partials/shop-details-des-area.pug
+        .col-xxl-2.wow.fadeInRight
+          include ../partials/sticky-sidebar-shop-detail.pug
+  //
+    ============================
+    SHOP DETAILS END
+    =============================
+  //
+    ============================
+    RELATED PRODUCTS START
+    =============================
+  if (relatedProducts.length > 0)
+    +products-slider("Sản Phẩm", "Liên Quan", relatedProducts)
+  //
+    ============================
+    RELATED PRODUCTS END
+    =============================
+
+  //
+    ============================
+    Sản phẩm đã xem
+    =============================
+  if (viewedProducts.length > 0)
+    +products-slider("Sản Phẩm", "Đã Xem", viewedProducts)
+  //
+    ============================
+    Hết Sản phẩm đã xem
+    =============================

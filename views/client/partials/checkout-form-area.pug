@@ -1,0 +1,74 @@
+form(class="checkout_form_area" id="checkoutAddressForm")
+  #accordionExample.accordion
+    .accordion-item.border-0
+      .accordion-header
+        .accordion-button.collapsed.p-0(
+          aria-controls="collapseThree" 
+          aria-expanded="false" 
+          data-bs-target="#collapseThree" 
+          role="tabpanel" 
+          data-bs-toggle="collapse"
+          )
+          .form-check
+            input#flexCheckDefault.form-check-input(
+              value="" 
+              type="radio"
+              name="userAddress"
+              )
+            label.form-check-label(for="flexCheckDefault") Nhập địa chỉ mới
+      #collapseThree.accordion-collapse.collapse(data-bs-parent="#accordionExample")
+        .accordion-body.p-0
+          .row
+            .col-md-6
+              div(class="single_input")
+                label Họ tên *
+                input(
+                  placeholder="Ví dụ: Lê Văn A" 
+                  type="text"
+                  name="fullName"
+                  )
+            .col-md-6
+              div(class="single_input")
+                label Số điện thoại *
+                input(
+                  placeholder="Ví dụ: 0987654321" 
+                  type="text"
+                  name="phone"
+                  )
+            .col-md-12.mt-4
+              label Chọn địa chỉ trên bản đồ *
+              div(class="input-group")
+                input(
+                  class="form-control" 
+                  placeholder="Nhập địa chỉ cần tìm..." 
+                  type="text"
+                  id="mapSearchInput"
+                  )
+                span(
+                  class="btn btn-outline-secondary"
+                  id="mapSearchBtn"
+                  ) Tìm kiếm
+              div(id="boxMap" style="height: 350px; margin-bottom: 25px;")
+            .col-md-6
+              div(class="single_input")
+                label(for="longitude") Kinh độ *
+                input(type="text" name="longitude" id="longitude")
+            .col-md-6
+              div(class="single_input")
+                label(for="latitude") Vĩ độ *
+                input(type="text" name="latitude" id="latitude")
+            .col-md-12
+              div(class="single_input")
+                label Địa chỉ *
+                input(
+                  placeholder="Ví dụ: Số 123, đường ABC,..." 
+                  type="text"
+                  name="address"
+                  )
+  .col-xl-12
+    div(class="single_input")
+      label Ghi chú
+      textarea(
+        rows="2"
+        name="note"
+        )

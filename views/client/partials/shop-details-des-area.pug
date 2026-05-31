@@ -1,0 +1,76 @@
+include ../mixins/stars.pug
+
+div(class="shop_details_des_area")
+  ul#pills-tab2.nav.nav-pills(role="tablist")
+    li.nav-item(role="presentation")
+      button#description-tab.nav-link.active(
+        aria-selected="false" 
+        aria-controls="description" 
+        role="tab" 
+        type="button" 
+        data-bs-target="#description" 
+        data-bs-toggle="pill"
+        ) Mô tả
+    li.nav-item(role="presentation")
+      button#description-tab4.nav-link(
+        aria-selected="false" 
+        aria-controls="description4" 
+        role="tab" 
+        type="button" 
+        data-bs-target="#description4" 
+        data-bs-toggle="pill"
+        ) Đánh giá
+  #pills-tabContent2.tab-content
+    #description.tab-pane.fade.show.active(
+      tabindex="0" 
+      aria-labelledby="description-tab" 
+      role="tabpanel"
+      )
+      div(class="shop_details_description")
+        | !{productDetail.content}
+    #description4.tab-pane.fade(
+      tabindex="0" 
+      aria-labelledby="description-tab4" 
+      role="tabpanel"
+      )
+      div(class="shop_details_review")
+        div(class="single_review_list_area")
+          h3 Đánh giá của khách hàng
+          each item in reviewList
+            div(class="single_review")
+              .img
+                img.img-fluid.w-100(
+                  alt=item.user.fullName
+                  src=`${domainCDN}${item.user.avatar}`
+                  )
+              .text
+                h5
+                  | #{item.user.fullName}
+                  span
+                    +stars(item)
+                p.date #{item.createdAt.toLocaleString("vi-VN")}
+                p.description
+                  | #{item.comment}
+                ul
+                  each image in item.images
+                    li
+                      img.img-fluid.w-100(
+                        alt="" 
+                        src=`${domainCDN}${image}`
+                        )
+          .row
+            div(class="pagination_area")
+              nav(aria-label="...")
+                ul.pagination.justify-content-start(class="mt_25")
+                  li.page-item
+                    a.page-link(href="#")
+                      i.far.fa-arrow-left
+                  li.page-item
+                    a.page-link.active(href="#") 01
+                  li.page-item
+                    a.page-link(href="#") 02
+                  li.page-item
+                    a.page-link(href="#") 03
+                  li.page-item
+                    a.page-link(href="#")
+                      i.far.fa-arrow-right

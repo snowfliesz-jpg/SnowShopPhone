@@ -1,0 +1,75 @@
+div(class="cart_page_summary")
+  h3 Tóm tắt thanh toán
+  ul(cart-summary)
+    li
+      a.img(href=`/product/detail/:slug`)
+        img.img-fluid.w-100(
+          alt="Sản phẩm 1" 
+          src="/client/assets/images/product_18.png"
+          )
+      .text
+        a.title(href=`/product/detail/:slug`) Sản phẩm 1
+        p 1.000.000đ × 2
+        p Màu sắc: Đỏ
+        p Kích cỡ: Size M
+  h6
+    | Tạm tính
+    span
+      span(sub-total) 0
+      span đ
+  div(class="checkout_shipping")
+    h6 Phương thức vận chuyển
+    div(shipping-list)
+    //- .form-check
+    //-   input#shippingMethod1.form-check-input(
+    //-     name="shippingMethod" 
+    //-     type="radio"
+    //-     )
+    //-   label.form-check-label(for="shippingMethod1")
+    //-     | GHN:
+    //-     span
+    //-       span (+) 
+    //-       span 0đ
+    //- .form-check
+    //-   input#shippingMethod2.form-check-input(
+    //-     name="shippingMethod" 
+    //-     type="radio"
+    //-     )
+    //-   label.form-check-label(for="shippingMethod2")
+    //-     | GHTK:
+    //-     span
+    //-       span (+) 
+    //-       span 0đ
+  h6
+    | Giảm giá
+    span
+      span(discount) 0
+      span đ
+  h6
+    | Giảm giá (Tích điểm)
+    span
+      span(point-discount) 0
+      span đ
+  h4
+    | Tổng tiền
+    span
+      span(total) 0
+      span đ
+  form(id="applyCouponForm")
+    input(
+      placeholder="Mã giảm giá" 
+      type="text"
+      class="inner-input"
+      name="coupon"
+      )
+    button(
+      class="common_btn" 
+      type="submit"
+      class="inner-button"
+      ) Áp dụng
+    p(class="inner-view-coupon" style="display: none;")
+      span
+        | Mã giảm giá: 
+        b(class="inner-coupon")
+      a(href="javascript:;" class="inner-remove")
+        i.fal.fa-times

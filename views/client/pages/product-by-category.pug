@@ -1,0 +1,85 @@
+extends ../layouts/default.pug
+include ../mixins/page-banner.pug
+include ../mixins/product-item-2.pug
+include ../mixins/product-list-item.pug
+
+block main
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+  +page-banner(
+    categoryDetail,
+    `/product/category/${categoryDetail.slug}`
+  )
+  //
+    =========================
+    PAGE BANNER START
+    ==========================
+  //
+    ============================
+    SHOP PAGE START
+    =============================
+  section(class="shop_page mt_100 mb_100")
+    .container
+      .row
+        .col-xxl-2.col-lg-4.col-xl-3
+          include ../partials/sticky-sidebar-shop.pug
+        .col-xxl-10.col-lg-8.col-xl-9
+          include ../partials/product-page-top.pug
+          #nav-tabContent.tab-content
+            #nav-home.tab-pane.fade.show.active(
+              tabindex="0" 
+              aria-labelledby="nav-home-tab" 
+              role="tabpanel"
+              )
+              .row
+                each item in productList
+                  .col-xxl-3.col-6.col-md-4.col-lg-6.col-xl-4.wow.fadeInUp
+                    +product-item-2(item)
+              //- .row
+              //-   div(class="pagination_area")
+              //-     nav(aria-label="...")
+              //-       ul.pagination.justify-content-start(class="mt_50")
+              //-         li.page-item
+              //-           a.page-link(href="#")
+              //-             i.far.fa-arrow-left
+              //-         li.page-item
+              //-           a.page-link.active(href="#") 01
+              //-         li.page-item
+              //-           a.page-link(href="#") 02
+              //-         li.page-item
+              //-           a.page-link(href="#") 03
+              //-         li.page-item
+              //-           a.page-link(href="#")
+              //-             i.far.fa-arrow-right
+            #nav-profile.tab-pane.fade(
+              tabindex="0" 
+              aria-labelledby="nav-profile-tab" 
+              role="tabpanel"
+              )
+              .row
+                each item in productList
+                  .col-6.col-xxl-10.col-sm-12
+                    +product-list-item(item)
+              //- .row
+              //-   div(class="pagination_area")
+              //-     nav(aria-label="...")
+              //-       ul.pagination.justify-content-start(class="mt_50")
+              //-         li.page-item
+              //-           a.page-link(href="#")
+              //-             i.far.fa-arrow-left
+              //-         li.page-item
+              //-           a.page-link.active(href="#") 01
+              //-         li.page-item
+              //-           a.page-link(href="#") 02
+              //-         li.page-item
+              //-           a.page-link(href="#") 03
+              //-         li.page-item
+              //-           a.page-link(href="#")
+              //-             i.far.fa-arrow-right
+          include ../partials/pagination-area.pug
+  //
+    ============================
+    SHOP PAGE END
+    =============================

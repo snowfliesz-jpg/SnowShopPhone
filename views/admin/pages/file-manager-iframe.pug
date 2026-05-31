@@ -1,0 +1,9 @@
+extends ../layouts/default.pug
+include ../mixins/pagination.pug
+
+block main
+  iframe(
+    src=`/${pathAdmin}/file-manager`, 
+    frameborder="0"
+    style="width: 100%; height: 76vh;"
+  ) 

@@ -1,0 +1,57 @@
+extends ../layouts/default.pug
+include ../mixins/page-banner.pug
+include ../mixins/stars.pug
+
+block main
+  +page-banner(
+    {
+      name: pageTitle
+    },
+    "/dashboard/reviews"
+  )
+
+  section.dashboard.dashboard_reviews(class="mb_100")
+    .container
+      .row
+        .col-xl-3.wow.fadeInUp
+          include ../partials/dashboard-sidebar.pug
+        .col-xl-9.wow.fadeInRight
+          div(class="dashboard_content mt_100")
+            h3(class="dashboard_title") #{pageTitle}
+            .dashboard_recent_review
+              if reviewList.length > 0
+                .single_review_list_area
+                  each item in reviewList
+                    .single_review
+                      .img
+                        img.img-fluid.w-100(
+                          alt=accountUser.fullName
+                          src=(
+                            accountUser.avatar
+                            ? `${domainCDN}${accountUser.avatar}`
+                            : "https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg"
+                          )
+                        )
+                      .text
+                        h5
+                          if item.product && item.product.slug
+                            a.title(href=`/product/detail/${item.product.slug}`) #{item.product.name}
+                          else
+                            span.title #{item.product ? item.product.name : "San pham da xoa"}
+                          span
+                            +stars(item)
+                        p.date #{item.createdAt.toLocaleString("vi-VN")}
+                        if item.variant && item.variant.length > 0
+                          p #{item.variant.join(", ")}
+                        p.description #{item.comment}
+                        if item.images && item.images.length > 0
+                          ul
+                            each image in item.images
+                              li
+                                img.img-fluid.w-100(
+                                  alt=""
+                                  src=`${domainCDN}${image}`
+                                )
+              else
+                .dashboard_profile_info_list
+                  p.mb-0 Ban chua co danh gia nao.
