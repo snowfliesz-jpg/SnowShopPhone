@@ -2,7 +2,7 @@ include ../mixins/stars.pug
 
 div(class="shop_details_text")
   script.
-    const productVariants = !{JSON.stringify(productDetail.variants)};
+    const productVariants = !{JSON.stringify((productDetail.variants || []).filter(item => item.status !== false))};
   //- p.category Computers & Tablets
   h2(class="details_title") #{productDetail.name}
   .d-flex.flex-wrap.align-items-center
@@ -22,19 +22,20 @@ div(class="shop_details_text")
       p(class="variant_title") #{attribute.name}:
       if (attribute.type == "color")
         ul(class="details_variant_color")
-          each variant in attribute.variants
+          each option in attribute.variantOptions
             li(
-              style=`background: ${variant};`
+              style=`background: ${option.styleValue || option.value};`
+              title=option.label
               attribute-id=attribute.id
-              variant=variant
+              variant=option.value
               )
-      else if (attribute.type == "text")
+      else
         ul(class="details_variant_size")
-          each variantLabel, index in attribute.variantsLabel
+          each option in attribute.variantOptions
             li(
               attribute-id=attribute.id
-              variant=attribute.variants[index]
-            ) #{variantLabel}
+              variant=option.value
+            ) #{option.label}
   .d-flex.flex-wrap.align-items-center
     div(class="details_qty_input")
       button.minus

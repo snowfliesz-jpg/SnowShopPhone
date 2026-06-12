@@ -3267,6 +3267,33 @@ footer {
     content: "";
     inset: 0;
     background: linear-gradient(90deg, rgba(237, 245, 255, 0.82) 0%, rgba(237, 245, 255, 0.36) 38%, rgba(237, 245, 255, 0) 72%);
+    z-index: 1;
+}
+
+.phone_banner_slides {
+    position: relative;
+    min-height: 480px;
+}
+
+.phone_banner_slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease, visibility .6s ease;
+    -webkit-transition: opacity .6s ease, transform .6s ease, visibility .6s ease;
+    -moz-transition: opacity .6s ease, transform .6s ease, visibility .6s ease;
+    -ms-transition: opacity .6s ease, transform .6s ease, visibility .6s ease;
+    -o-transition: opacity .6s ease, transform .6s ease, visibility .6s ease;
+}
+
+.phone_banner_slide.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 .phone_banner_content {
@@ -3293,6 +3320,7 @@ footer {
 .phone_banner_visual {
     position: absolute;
     inset: 0;
+    z-index: 1;
 }
 
 .phone_banner_phone {
@@ -3329,14 +3357,26 @@ footer {
 }
 
 .phone_banner_dots li {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 165, 0, 0.42);
+    line-height: 0;
 }
 
-.phone_banner_dots li.active {
+.phone_banner_dots li button {
+    width: 8px;
+    height: 8px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(255, 165, 0, 0.42);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.phone_banner_dots li button.active {
     background: var(--themeColorTwo);
+    transform: scale(1.35);
 }
 
 .phone_banner_side {
@@ -8947,6 +8987,56 @@ footer {
 
 .shop_details_description p {
     margin-top: 14px;
+}
+
+.shop_details_description_content {
+    position: relative;
+}
+
+.shop_details_description.is-collapsed .shop_details_description_content {
+    max-height: 420px;
+    overflow: hidden;
+}
+
+.shop_details_description.is-collapsed .shop_details_description_content::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 110px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    pointer-events: none;
+}
+
+.shop_details_description_toggle {
+    margin-top: 24px;
+    border: 1px solid #ddd;
+    background: var(--colorWhite);
+    color: var(--themeColorTwo);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.shop_details_description_toggle:hover {
+    color: var(--colorWhite);
+    background: var(--themeColorTwo);
+    border-color: var(--themeColorTwo);
+}
+
+.shop_details_description_toggle[hidden] {
+    display: none !important;
 }
 
 .shop_details_description ul,

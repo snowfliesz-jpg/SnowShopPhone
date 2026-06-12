@@ -56,6 +56,56 @@ if(listButtonShare.length > 0) {
 }
 // End button-share
 
+// home banner
+const homeBanner = document.querySelector("[data-home-banner]");
+if(homeBanner) {
+  const bannerSlides = homeBanner.querySelectorAll("[data-banner-slide]");
+  const bannerDots = document.querySelectorAll("[data-banner-dot]");
+  let currentBannerIndex = 0;
+  let bannerTimer = null;
+
+  const setBannerSlide = (index) => {
+    bannerSlides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    bannerDots.forEach((dot, dotIndex) => {
+      const isActive = dotIndex === index;
+      dot.classList.toggle("active", isActive);
+      dot.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+
+    currentBannerIndex = index;
+  }
+
+  const startBannerAutoplay = () => {
+    clearInterval(bannerTimer);
+    bannerTimer = setInterval(() => {
+      const nextIndex = (currentBannerIndex + 1) % bannerSlides.length;
+      setBannerSlide(nextIndex);
+    }, 4000);
+  }
+
+  bannerDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      setBannerSlide(index);
+      startBannerAutoplay();
+    })
+  })
+
+  homeBanner.addEventListener("mouseenter", () => {
+    clearInterval(bannerTimer);
+  })
+
+  homeBanner.addEventListener("mouseleave", () => {
+    startBannerAutoplay();
+  })
+
+  setBannerSlide(0);
+  startBannerAutoplay();
+}
+// End home banner
+
 // filter-product-status
 const listFilterProductStatus = document.querySelectorAll("[filter-product-status]");
 if(listFilterProductStatus.length > 0) {
@@ -196,10 +246,11 @@ if(formSearch) {
   // Suggest
   const input = formSearch.querySelector(`input[name="keyword"]`);
   const boxSuggest = formSearch.querySelector(`.inner-suggest`);
-  const boxSuggestList = boxSuggest.querySelector(`.inner-list`);
+  const boxSuggestList = boxSuggest ? boxSuggest.querySelector(`.inner-list`) : null;
   let timeout;
 
-  input.addEventListener("input", () => {
+  if(input && boxSuggest && boxSuggestList) {
+    input.addEventListener("input", () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       const keyword = input.value;
@@ -238,7 +289,8 @@ if(formSearch) {
         boxSuggest.style.display = "none";
       }
     }, 500);
-  })
+    })
+  }
   // End Suggest
 }
 // End form-search
@@ -789,6 +841,42 @@ const miniWishlistQuantity = () => {
 miniWishlistQuantity();
 // End mini-wishlist-quantity
 
+// shop_details_description
+const productDescriptionWrapper = document.querySelector("[data-description-wrapper]");
+if(productDescriptionWrapper) {
+  const productDescriptionContent = productDescriptionWrapper.querySelector("[data-description-content]");
+  const productDescriptionToggle = productDescriptionWrapper.querySelector("[data-description-toggle]");
+  const collapsedClassName = "is-collapsed";
+  const collapsedHeight = 420;
+
+  const syncProductDescription = () => {
+    const shouldCollapse = productDescriptionContent.scrollHeight > collapsedHeight + 40;
+
+    productDescriptionToggle.hidden = !shouldCollapse;
+
+    if(!shouldCollapse) {
+      productDescriptionWrapper.classList.remove(collapsedClassName);
+      productDescriptionToggle.setAttribute("aria-expanded", "true");
+      productDescriptionToggle.innerHTML = "Thu gọn";
+      return;
+    }
+
+    const isExpanded = !productDescriptionWrapper.classList.contains(collapsedClassName);
+    productDescriptionToggle.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+    productDescriptionToggle.innerHTML = isExpanded ? "Thu gọn" : "Xem đầy đủ";
+  }
+
+  productDescriptionToggle.addEventListener("click", () => {
+    productDescriptionWrapper.classList.toggle(collapsedClassName);
+    syncProductDescription();
+  })
+
+  window.addEventListener("load", syncProductDescription);
+  window.addEventListener("resize", syncProductDescription);
+  syncProductDescription();
+}
+// End shop_details_description
+
 // shop_details_text
 const shopDetailsText = document.querySelector(".shop_details_text");
 if(shopDetailsText) {
@@ -867,9 +955,12 @@ if(shopDetailsText) {
       const selectedValues = Object.values(selected);
       if(selectedValues.length > 0) {
         // Lọc variant có đủ attributeValue trùng khớp
-        const variantMatched = productVariants.find(variantItem => {
-          return variantItem.attributeValue.every(attr => selected[attr.attrId] == attr.value)
-        })
+        const isAllVariantSelected = selectedValues.length === listVariantGroup.length;
+        const variantMatched = isAllVariantSelected
+          ? productVariants.find(variantItem => {
+              return variantItem.attributeValue.every(attr => selected[attr.attrId] == attr.value);
+            })
+          : null;
 
         if(variantMatched) {
           elementPriceNew.innerHTML = variantMatched.priceNew.toLocaleString("vi-VN") + "đ";

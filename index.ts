@@ -10,20 +10,12 @@ import session from "express-session";
 import passport from "passport";
 import { configureGooglePassport } from './configs/googleOauth.config';
 import { configureFacebookPassport } from './configs/facebookOauth.config';
-import { Server } from 'socket.io';
-import { createServer } from 'node:http';
-import { initSocket } from './sockets/index.socket';
-import { startJobs } from './jobs/index.job';
 
 // Load biến môi trường
 dotenv.config();
 
 const app = express();
 const port = 3000;
-
-// Khởi tạo SocketIO bên Server
-const server = createServer(app);
-const io = new Server(server);
 
 // Kết nối CSDL
 connectDB();
@@ -44,15 +36,15 @@ app.use((req, res, next) => {
     // Để tương thích với trình duyệt / proxy cũ
     res.set('Pragma', 'no-cache');
 
-    // Đặt thời gian hết hạn của response là ngay lập tức (nghĩa là trình duyệt không được dùng lại mà không hỏi server)
+    // Đặt thời gian hết hạn của response là ngay lập tức
     res.set('Expires', '0');
   }
   next();
 });
 
 // Thiết lập thư mục views và view engine Pug
-app.set('views', path.join(__dirname, 'views')); // Thư mục chứa file Pug
-app.set('view engine', 'pug'); // Thiết lập Pug làm view engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
 // Thiết lập thư mục chứa file tĩnh
 app.use(express.static(path.join(__dirname, 'public')));
@@ -80,12 +72,6 @@ configureFacebookPassport(passport);
 app.use(`/${pathAdmin}`, adminRoutes);
 app.use("/", clientRoutes);
 
-// Khởi tạo Socket bên Server
-initSocket(io);
-
-// Gọi job
-startJobs();
-
-server.listen(port, "0.0.0.0", () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Website đang chạy trên cổng ${port}`);
 });

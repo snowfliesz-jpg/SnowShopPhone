@@ -5,6 +5,7 @@ import axios from 'axios';
 import { getInfoAddress } from '../../helpers/location.helper';
 import { pointConfig } from '../../configs/variable.config';
 import { getApiShipping } from '../../configs/setting.config';
+import { normalizeProductVariants, normalizeVariantSelection } from '../../helpers/product.helper';
 
 export const list = async (req: Request, res: Response) => {
   try {
@@ -25,11 +26,16 @@ export const list = async (req: Request, res: Response) => {
           .find({
             _id: { $in: productDetail.attributes }
           })
-          .select("id name")
           .lean();
+
+        const normalizedVariants = normalizeProductVariants(productDetail.variants || [], attributeList);
+        const normalizedItemVariant = item.variant
+          ? normalizeVariantSelection(item.variant, attributeList)
+          : item.variant;
 
         const itemDetail = {
           ...item,
+          variant: normalizedItemVariant,
           detail: {
             images: productDetail.images,
             slug: productDetail.slug,
@@ -38,7 +44,7 @@ export const list = async (req: Request, res: Response) => {
             priceOld: productDetail.priceOld,
             stock: productDetail.stock,
             attributeList: attributeList,
-            variants: productDetail.variants
+            variants: normalizedVariants
           }
         };
 

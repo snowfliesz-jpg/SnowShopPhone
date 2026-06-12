@@ -8,33 +8,73 @@ block main
       .row.g-4
         .col-xl-8.col-lg-7
           .phone_banner_main.wow.fadeInLeft
-            .phone_banner_content
-              h4 Thoi Dai Cong Nghe Moi
-              h1
-                | Noi Phong Cach Duoc
-                br
-                | The Hien
-              a.common_btn(href="/product/category")
-                | Mua Ngay
-                i.far.fa-arrow-right
-            .phone_banner_visual
-              img.phone_banner_phone.phone_banner_phone_back(
-                alt="Dien thoai thong minh"
-                src="/client/assets/images/product_23.jpg"
-                )
-              img.phone_banner_phone.phone_banner_phone_front(
-                alt="Dien thoai noi bat"
-                src="/client/assets/images/product_24.webp"
-                )
+            .phone_banner_slides(data-home-banner)
+              .phone_banner_slide.active(data-banner-slide)
+                .phone_banner_content
+                  h4 Thời đại công nghệ mới
+                  h1
+                    | Nơi phong cách được
+                    br
+                    | Thể Hiện
+                  a.common_btn(href="/product/category")
+                    | Mua Ngay
+                    i.far.fa-arrow-right
+                .phone_banner_visual
+                  img.phone_banner_phone.phone_banner_phone_back(
+                    alt="Dien thoai thong minh"
+                    src="/client/assets/images/product_23.jpg"
+                    )
+                  img.phone_banner_phone.phone_banner_phone_front(
+                    alt="Dien thoai noi bat"
+                    src="/client/assets/images/product_24.webp"
+                    )
+              .phone_banner_slide(data-banner-slide)
+                .phone_banner_content
+                  h4 Xu Hướng Smartphone
+                  h1
+                    | Chuyển Động Mượt Mà
+                  a.common_btn(href="/product/category")
+                    | Khám Phá Ngay
+                    i.far.fa-arrow-right
+                .phone_banner_visual
+                  img.phone_banner_phone.phone_banner_phone_back(
+                    alt="Dien thoai cao cap"
+                    src="/client/assets/images/product_24.webp"
+                    )
+                  img.phone_banner_phone.phone_banner_phone_front(
+                    alt="Dien thoai moi nhat"
+                    src="/client/assets/images/product_25.webp"
+                    )
+              .phone_banner_slide(data-banner-slide)
+                .phone_banner_content
+                  h4 Công nghê dẫn đầu
+                  h1
+                    | Lựa chọn hoàn hảo
+                    br
+                    | Cho Tương Lai
+                  a.common_btn(href="/product/category")
+                    | Xem sản phẩm
+                    i.far.fa-arrow-right
+                .phone_banner_visual
+                  img.phone_banner_phone.phone_banner_phone_back(
+                    alt="Dien thoai sanh dieu"
+                    src="/client/assets/images/product_22.webp"
+                    )
+                  img.phone_banner_phone.phone_banner_phone_front(
+                    alt="Dien thoai phong cach"
+                    src="/client/assets/images/product_23.jpg"
+                    )
             ul.phone_banner_dots
-              li.active
               li
+                button.active(type="button" data-banner-dot aria-label="Slide 1" aria-current="true")
               li
+                button(type="button" data-banner-dot aria-label="Slide 2" aria-current="false")
+              li
+                button(type="button" data-banner-dot aria-label="Slide 3" aria-current="false")
         .col-xl-4.col-lg-5
           .phone_banner_side.wow.fadeInRight
             .phone_banner_side_text
-              h5 Chao Ngung Ngay He
-              h3 May mat vo tu
+              h5 Chào mừng ngày hè
               a.common_btn(href=(newestProducts.length > 0 ? `/product/detail/${newestProducts[0].slug}` : "/product/category"))
                 | Mua Ngay
                 i.far.fa-arrow-right
@@ -54,10 +94,9 @@ block main
         .col-xl-8
           .section_heading_2.section_heading
             h3
-              span San Pham
-              | Dang Giam Gia
+              span Sản phẩm Đang giảm giá
         .col-xl-4.text-xl-end
-          a.common_btn(href="/product/category?onSale=true") Xem tat ca
+          a.common_btn(href="/product/category?onSale=true") Xem tất cả
       .row.mt_25
         if saleProducts.length > 0
           each item in saleProducts
@@ -65,7 +104,7 @@ block main
               +product-item-2(item)
         else
           .col-12
-            p.mb-0 Chua co san pham dang giam gia.
+            p.mb-0 Chưa có sản phẩm nào đang giảm giá.
 
   section.mt_100
     .container
@@ -73,10 +112,9 @@ block main
         .col-xl-8
           .section_heading_2.section_heading
             h3
-              span San Pham
-              | Moi Nhat
+              span Sản phẩm Mới Nhất
         .col-xl-4.text-xl-end
-          a.common_btn(href="/product/category") Xem tat ca
+          a.common_btn(href="/product/category") Xem tất cả
       .row.mt_25
         if newestProducts.length > 0
           each item in newestProducts
@@ -84,7 +122,7 @@ block main
               +product-item-2(item)
         else
           .col-12
-            p.mb-0 Chua co san pham moi.
+            p.mb-0 Chưa có sản phẩm nào mới.
 
   section.blog_2.mt_100.mb_100
     .container
@@ -92,10 +130,9 @@ block main
         .col-xl-8
           .section_heading_2.section_heading
             h3
-              span Bai Viet
-              | Moi Nhat
+              span Bài viết Mới nhất
         .col-xl-4.text-xl-end
-          a.common_btn(href=(latestArticles.length > 0 ? `/article/detail/${latestArticles[0].slug}` : "#")) Xem bai viet
+          a.common_btn(href=(latestArticles.length > 0 ? `/article/detail/${latestArticles[0].slug}` : "#")) Xem bài viết
       .row.mt_25
         if latestArticles.length > 0
           each item in latestArticles
@@ -103,4 +140,4 @@ block main
               +blog-item(item)
         else
           .col-12
-            p.mb-0 Chua co bai viet moi.
+            p.mb-0 Chưa có bài viết nào mới.

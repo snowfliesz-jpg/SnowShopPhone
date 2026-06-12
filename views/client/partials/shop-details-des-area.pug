@@ -26,8 +26,15 @@ div(class="shop_details_des_area")
       aria-labelledby="description-tab" 
       role="tabpanel"
       )
-      div(class="shop_details_description")
-        | !{productDetail.content}
+      div(class="shop_details_description is-collapsed" data-description-wrapper)
+        div(class="shop_details_description_content" data-description-content)
+          | !{productDetail.content}
+        button(
+          class="shop_details_description_toggle"
+          type="button"
+          data-description-toggle
+          aria-expanded="false"
+          ) Xem đầy đủ
     #description4.tab-pane.fade(
       tabindex="0" 
       aria-labelledby="description-tab4" 

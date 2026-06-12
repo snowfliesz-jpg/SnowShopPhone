@@ -29,19 +29,19 @@
                 href="#sidebarDashboard"
               )
                 i.iconoir-home-simple.menu-icon
-                span Tong quan
+                span Tổng quan
               #sidebarDashboard.collapse
                 ul.nav.flex-column
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/dashboard`) Tong quan KPI
+                    a.nav-link(href=`/${pathAdmin}/dashboard`) Tổng quan KPI
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/dashboard/revenue-by-time`) Doanh thu theo thoi gian
+                    a.nav-link(href=`/${pathAdmin}/dashboard/revenue-by-time`) Doanh thu theo thời gian
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/dashboard/order-statistic`) Thong ke don hang
+                    a.nav-link(href=`/${pathAdmin}/dashboard/order-statistic`) Thống kê đơn hàng
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/dashboard/top-selling-products`) San pham ban chay
+                    a.nav-link(href=`/${pathAdmin}/dashboard/top-selling-products`) Sản phẩm bán chạy
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/dashboard/customer-statistic`) Thong ke khach hang
+                    a.nav-link(href=`/${pathAdmin}/dashboard/customer-statistic`) Thống kê khách hàng
           li.nav-item
             a.nav-link(
               aria-controls="sidebarProduct"
@@ -51,17 +51,17 @@
               href="#sidebarProduct"
             )
               i.iconoir-shop.menu-icon
-              span San pham
+              span Sản phẩm
             #sidebarProduct.collapse
               ul.nav.flex-column
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/product/create`) Tao san pham
+                  a.nav-link(href=`/${pathAdmin}/product/create`) Tạo sản phẩm
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/product/list`) Danh sach san pham
+                  a.nav-link(href=`/${pathAdmin}/product/list`) Danh sách sản phẩm
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/product/category`) Danh muc san pham
+                  a.nav-link(href=`/${pathAdmin}/product/category`) Danh mục sản phẩm
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/product/attribute`) Thuoc tinh san pham
+                  a.nav-link(href=`/${pathAdmin}/product/attribute`) Thuộc tính sản phẩm
           li.nav-item
             a.nav-link(
               aria-controls="sidebarArticle"
@@ -71,18 +71,18 @@
               href="#sidebarArticle"
             )
               i.iconoir-journal-page.menu-icon
-              span Bai viet
+              span Bài viết
             #sidebarArticle.collapse
               ul.nav.flex-column
                 if (permissions.includes("article-create"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/article/create`) Tao bai viet
+                    a.nav-link(href=`/${pathAdmin}/article/create`) Tạo bài viết
                 if (permissions.includes("article-list"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/article/list`) Danh sach bai viet
+                    a.nav-link(href=`/${pathAdmin}/article/list`) Danh sách bài viết
                 if (permissions.includes("article-category"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/article/category`) Danh muc bai viet
+                    a.nav-link(href=`/${pathAdmin}/article/category`) Danh mục bài viết
           li.nav-item
             a.nav-link(
               aria-controls="sidebarRole"
@@ -92,15 +92,15 @@
               href="#sidebarRole"
             )
               i.iconoir-user-badge-check.menu-icon
-              span Nhom quyen
+              span Nhóm quyền
             #sidebarRole.collapse
               ul.nav.flex-column
                 if (permissions.includes("role-create"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/role/create`) Tao nhom quyen
+                    a.nav-link(href=`/${pathAdmin}/role/create`) Tạo nhóm quyền
                 if (permissions.includes("role-list"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/role/list`) Danh sach nhom quyen
+                    a.nav-link(href=`/${pathAdmin}/role/list`) Danh sách nhóm quyền
           li.nav-item
             a.nav-link(
               aria-controls="sidebarAccountAdmin"
@@ -110,15 +110,15 @@
               href="#sidebarAccountAdmin"
             )
               i.iconoir-user-crown.menu-icon
-              span Tai khoan quan tri
+              span Tài khoản quản trị
             #sidebarAccountAdmin.collapse
               ul.nav.flex-column
                 if (permissions.includes("account-admin-create"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/account-admin/create`) Tao tai khoan
+                    a.nav-link(href=`/${pathAdmin}/account-admin/create`) Tạo tài khoản
                 if (permissions.includes("account-admin-list"))
                   li.nav-item
-                    a.nav-link(href=`/${pathAdmin}/account-admin/list`) Danh sach tai khoan
+                    a.nav-link(href=`/${pathAdmin}/account-admin/list`) Danh sách tài khoản
           li.nav-item
             a.nav-link(
               aria-controls="sidebarAccountUser"
@@ -128,11 +128,11 @@
               href="#sidebarAccountUser"
             )
               i.iconoir-user-crown.menu-icon
-              span Tai khoan nguoi dung
+              span Tài khoản người dùng
             #sidebarAccountUser.collapse
               ul.nav.flex-column
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/account-user/list`) Danh sach tai khoan
+                  a.nav-link(href=`/${pathAdmin}/account-user/list`) Danh sách tài khoản
           li.nav-item
             a.nav-link(
               aria-controls="sidebarCoupon"
@@ -142,26 +142,26 @@
               href="#sidebarCoupon"
             )
               i.iconoir-percentage-circle.menu-icon
-              span Ma giam gia
+              span Mã giảm giá
             #sidebarCoupon.collapse
               ul.nav.flex-column
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/coupon/create`) Tao ma giam gia
+                  a.nav-link(href=`/${pathAdmin}/coupon/create`) Tạo mã giảm giá
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/coupon/list`) Danh sach ma giam gia
+                  a.nav-link(href=`/${pathAdmin}/coupon/list`) Danh sách mã giảm giá
           li.nav-item
             a.nav-link(href=`/${pathAdmin}/order/list`)
               i.iconoir-bag.menu-icon
-              span Quan ly don hang
+              span Quản lý đơn hàng
           li.nav-item
             a.nav-link(href=`/${pathAdmin}/review/list`)
               i.iconoir-star.menu-icon
-              span Quan ly danh gia
+              span Quản lý đánh giá
           if (permissions.includes("file-manager"))
             li.nav-item
               a.nav-link(href=`/${pathAdmin}/file-manager/iframe`)
                 i.iconoir-page-star.menu-icon
-                span Quan ly file
+                span Quản lý file
           li.nav-item
             a.nav-link(
               aria-controls="sidebarSetting"
@@ -171,24 +171,24 @@
               href="#sidebarSetting"
             )
               i.iconoir-settings.menu-icon
-              span Cai dat
+              span Cài đặt
             #sidebarSetting.collapse
               ul.nav.flex-column
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/setting/api-shipping`) API hang van chuyen
+                  a.nav-link(href=`/${pathAdmin}/setting/api-shipping`) API hàng vận chuyển
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/setting/api-payment`) API cong thanh toan
+                  a.nav-link(href=`/${pathAdmin}/setting/api-payment`) API cổng thanh toán
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/setting/api-login-social`) API dang nhap MXH
+                  a.nav-link(href=`/${pathAdmin}/setting/api-login-social`) API đăng nhập MXH
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/setting/api-app-password`) API mat khau ung dung
+                  a.nav-link(href=`/${pathAdmin}/setting/api-app-password`) API mật khẩu ứng dụng
                 li.nav-item
-                  a.nav-link(href=`/${pathAdmin}/setting/general`) Cai dat chung
+                  a.nav-link(href=`/${pathAdmin}/setting/general`) Cài đặt chung
                 li.nav-item
                   a.nav-link(
                     href="javascript:;"
                     button-api
                     data-method="PATCH"
                     data-api=`/${pathAdmin}/setting/remove-cache`
-                  ) Xoa bo nho dem
+                  ) Xóa bộ nhớ đệm
 .startbar-overlay.d-print-none

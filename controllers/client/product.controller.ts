@@ -3,7 +3,7 @@ import CategoryProduct from '../../models/category-product.model';
 import Product from '../../models/product.model';
 import slugify from 'slugify';
 import AttributeProduct from '../../models/attribute-product.model';
-import { formatProductItem } from '../../helpers/product.helper';
+import { formatProductItem, getColorStyleValue, normalizeProductVariants } from '../../helpers/product.helper';
 import Review from '../../models/review.model';
 import AccountUser from '../../models/account-user.model';
 
@@ -294,22 +294,31 @@ export const detail = async (req: Request, res: Response) => {
   // Danh sách thuộc tính
   const attributeList: any = await AttributeProduct.find({
     _id: { $in: productDetail.attributes }
-  })
+  }).lean();
+
+  productDetail.variants = normalizeProductVariants(productDetail.variants || [], attributeList);
+
   for (const attribute of attributeList) {
-    const variantSet = new Set();
-    const variantLabelSet = new Set();
-    productDetail.variants
-      .filter((variant: any) => variant.status)
+    attribute.id = `${attribute._id}`;
+    const optionMap = new Map();
+
+    (productDetail.variants || [])
+      .filter((variant: any) => variant.status !== false)
       .forEach((variant: any) => {
-        variant.attributeValue.forEach((attr: any) => {
-          if(attr.attrId == attribute.id) {
-            variantSet.add(attr.value);
-            variantLabelSet.add(attr.label);
+        (variant.attributeValue || []).forEach((attr: any) => {
+          if(attr.attrId == attribute.id && !optionMap.has(attr.value)) {
+            optionMap.set(attr.value, {
+              value: attr.value,
+              label: attr.label,
+              styleValue: attr.attrType == "color"
+                ? getColorStyleValue(attr.value, attr.label)
+                : attr.value
+            });
           }
         })
       })
-    attribute.variants = [...variantSet];
-    attribute.variantsLabel = [...variantLabelSet];
+
+    attribute.variantOptions = [...optionMap.values()];
   }
   // Hết Danh sách thuộc tính
 

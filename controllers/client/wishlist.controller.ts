@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import Product from '../../models/product.model';
 import AttributeProduct from '../../models/attribute-product.model';
+import { normalizeProductVariants, normalizeVariantSelection } from '../../helpers/product.helper';
 
 export const wishlist = (req: Request, res: Response) => {
   res.render("client/pages/wishlist", {
@@ -25,11 +26,16 @@ export const list = async (req: Request, res: Response) => {
           .find({
             _id: { $in: productDetail.attributes }
           })
-          .select("id name")
           .lean();
+
+        const normalizedVariants = normalizeProductVariants(productDetail.variants || [], attributeList);
+        const normalizedItemVariant = item.variant
+          ? normalizeVariantSelection(item.variant, attributeList)
+          : item.variant;
 
         const itemDetail = {
           ...item,
+          variant: normalizedItemVariant,
           detail: {
             images: productDetail.images,
             slug: productDetail.slug,
@@ -38,7 +44,7 @@ export const list = async (req: Request, res: Response) => {
             priceOld: productDetail.priceOld,
             stock: productDetail.stock,
             attributeList: attributeList,
-            variants: productDetail.variants
+            variants: normalizedVariants
           }
         };
 
